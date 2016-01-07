@@ -1,0 +1,6 @@
+Minimize
+ 
+Subject To
+ R20317: = 1
+Bounds
+End

@@ -1,0 +1,3306 @@
+
+Gurobi 6.5.0 (mac64) logging started Mon Jan  4 11:57:17 2016
+
+Changed value of parameter LazyConstraints to 1
+   Prev: 0  Min: 0  Max: 1  Default: 0
+Optimize a model with 100 rows, 5050 columns and 10000 nonzeros
+Coefficient statistics:
+  Matrix range    [1e+00, 1e+00]
+  Objective range [1e+00, 1e+02]
+  Bounds range    [1e+00, 1e+00]
+  RHS range       [2e+00, 2e+00]
+Presolve removed 0 rows and 100 columns
+Presolve time: 0.02s
+Presolved: 100 rows, 4950 columns, 9900 nonzeros
+Variable types: 0 continuous, 4950 integer (4950 binary)
+
+Root relaxation: objective 7.400596e+02, 147 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0  740.05958    0   20          -  740.05958      -     -    0s
+     0     0  744.98424    0   18          -  744.98424      -     -    0s
+     0     0  746.19848    0   13          -  746.19848      -     -    0s
+     0     0  746.38460    0    6          -  746.38460      -     -    0s
+     0     2  786.91050    0    6          -  786.91050      -     -    0s
+*  495   435             163     911.2648037  787.85771  13.5%   4.2    1s
+*  683   190              32     812.4384965  788.85293  2.90%   4.6    1s
+H  759   219                     810.7803127  793.19202  2.17%   4.6    1s
+
+Cutting planes:
+  Gomory: 5
+  Clique: 1
+  Zero half: 6
+  Lazy constraints: 1
+
+Explored 787 nodes (4506 simplex iterations) in 2.34 seconds
+Thread count was 4 (of 4 available processors)
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 8.107803127137e+02, best bound 8.107803127137e+02, gap 0.0%
+
+Gurobi 6.5.0 (mac64) logging started Mon Jan  4 11:57:23 2016
+
+Changed value of parameter LazyConstraints to 1
+   Prev: 0  Min: 0  Max: 1  Default: 0
+Optimize a model with 1000 rows, 500500 columns and 1000000 nonzeros
+Coefficient statistics:
+  Matrix range    [1e+00, 1e+00]
+  Objective range [1e+00, 1e+02]
+  Bounds range    [1e+00, 1e+00]
+  RHS range       [2e+00, 2e+00]
+Presolve removed 0 rows and 1000 columns (presolve time = 5s) ...
+Presolve removed 0 rows and 1000 columns
+Presolve time: 5.46s
+Presolved: 1000 rows, 499500 columns, 999000 nonzeros
+Variable types: 0 continuous, 499500 integer (499500 binary)
+
+Root simplex log...
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   2.000000e+03   0.000000e+00     11s
+
+Starting sifting (using dual simplex for sub-problems)...
+
+    Iter     Pivots    Primal Obj      Dual Obj        Time
+       0          0     infinity      0.0000000e+00     11s
+
+Sifting complete
+
+    1597    2.2117888e+03   0.000000e+00   0.000000e+00     11s
+
+Root relaxation: objective 2.211789e+03, 1597 iterations, 0.29 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 2211.78881    0  162          - 2211.78881      -     -   11s
+     0     0 2211.78881    0  162          - 2211.78881      -     -   20s
+     0     0 2211.78881    0  162          - 2211.78881      -     -   27s
+     0     0 2211.78881    0  162          - 2211.78881      -     -   34s
+     0     0 2216.89698    0  130          - 2216.89698      -     -   34s
+     0     0 2218.74014    0  136          - 2218.74014      -     -   36s
+     0     0 2222.15615    0  145          - 2222.15615      -     -   37s
+     0     0 2222.70643    0  179          - 2222.70643      -     -   38s
+     0     0 2224.07396    0  219          - 2224.07396      -     -   39s
+     0     0 2224.54176    0  176          - 2224.54176      -     -   40s
+     0     0 2225.28092    0  146          - 2225.28092      -     -   42s
+     0     0 2225.51125    0  132          - 2225.51125      -     -   43s
+     0     0 2225.59701    0  132          - 2225.59701      -     -   44s
+     0     0 2225.59701    0  120          - 2225.59701      -     -   49s
+     0     0 2225.59701    0  120          - 2225.59701      -     -   57s
+     0     0 2225.59701    0  120          - 2225.59701      -     -   63s
+     0     0 2225.59701    0  120          - 2225.59701      -     -   69s
+     0     2 2227.51683    0  114          - 2227.51683      -     -   98s
+     4     7 2228.94659    3  103          - 2227.84958      -   9.5  100s
+    30    31 2230.15682   12   90          - 2228.69374      -   4.4  105s
+    52    53 2231.15472   22   86          - 2228.69374      -   3.5  110s
+    72    73 2232.07799   30   64          - 2228.69374      -   3.4  115s
+    92    94 2233.24989   39   56          - 2228.69374      -   3.0  120s
+   124   125 2234.08027   51   50          - 2228.69374      -   3.0  125s
+   152   151 2234.83278   64   30          - 2228.69374      -   3.0  130s
+   181   181 2236.07644   75   18          - 2228.69374      -   3.0  135s
+   217   218 2239.02658   91   18          - 2228.69374      -   2.8  140s
+
+Cutting planes:
+  MIR: 17
+  Zero half: 90
+  Lazy constraints: 13
+
+Explored 240 nodes (2622 simplex iterations) in 144.74 seconds
+Thread count was 4 (of 4 available processors)
+
+Solve interrupted
+Best objective -, best bound 2.228693740233e+03, gap -
+
+Gurobi 6.5.0 (mac64) logging started Mon Jan  4 11:59:59 2016
+
+Changed value of parameter LazyConstraints to 1
+   Prev: 0  Min: 0  Max: 1  Default: 0
+Optimize a model with 200 rows, 20100 columns and 40000 nonzeros
+Coefficient statistics:
+  Matrix range    [1e+00, 1e+00]
+  Objective range [1e+00, 1e+02]
+  Bounds range    [1e+00, 1e+00]
+  RHS range       [2e+00, 2e+00]
+Presolve removed 0 rows and 200 columns
+Presolve time: 0.06s
+Presolved: 200 rows, 19900 columns, 39800 nonzeros
+Variable types: 0 continuous, 19900 integer (19900 binary)
+
+Root relaxation: objective 9.819618e+02, 303 iterations, 0.01 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0  981.96181    0   58          -  981.96181      -     -    0s
+     0     0  992.86349    0   34          -  992.86349      -     -    0s
+     0     0  994.27136    0   35          -  994.27136      -     -    0s
+     0     0  994.51056    0   31          -  994.51056      -     -    0s
+     0     0  994.51730    0   36          -  994.51730      -     -    0s
+     0     0  994.56357    0   30          -  994.56357      -     -    0s
+     0     0  994.56357    0   30          -  994.56357      -     -    0s
+     0     2 1004.99718    0   52          - 1004.99718      -     -    1s
+   546   541 1069.47910  204    6          - 1010.21512      -   3.4    5s
+  1118  1083 1099.32345  262   39          - 1036.36489      -   4.3   10s
+  1246  1164 1056.85245   50    6          - 1043.16581      -   4.8   15s
+  2095  1725 1184.89873  273    6          - 1043.16581      -   5.2   20s
+  2957  2240 1512.96349  487    6          - 1043.16581      -   5.5   25s
+  3956  2898 1754.26262  736    6          - 1043.16581      -   5.8   30s
+  4876  3597 1175.97077  216    6          - 1043.53085      -   5.8   35s
+* 5484  4134             969    2062.5292686 1043.53085  49.4%   5.9   37s
+H 5582    36                    1044.8521839 1043.53085  0.13%   5.9   38s
+
+Cutting planes:
+  Gomory: 15
+  MIR: 1
+  Flow cover: 4
+  Zero half: 16
+  Lazy constraints: 58
+
+Explored 5702 nodes (34026 simplex iterations) in 38.57 seconds
+Thread count was 4 (of 4 available processors)
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 1.044852183910e+03, best bound 1.044852183910e+03, gap 0.0%
+
+Gurobi 6.5.0 (mac64) logging started Mon Jan  4 12:00:54 2016
+
+Changed value of parameter LazyConstraints to 1
+   Prev: 0  Min: 0  Max: 1  Default: 0
+Optimize a model with 400 rows, 80200 columns and 160000 nonzeros
+Coefficient statistics:
+  Matrix range    [1e+00, 1e+00]
+  Objective range [1e+00, 1e+02]
+  Bounds range    [1e+00, 1e+00]
+  RHS range       [2e+00, 2e+00]
+Presolve removed 0 rows and 400 columns
+Presolve time: 0.37s
+Presolved: 400 rows, 79800 columns, 159600 nonzeros
+Variable types: 0 continuous, 79800 integer (79800 binary)
+
+Starting sifting (using dual simplex for sub-problems)...
+
+    Iter     Pivots    Primal Obj      Dual Obj        Time
+       0          0     infinity      0.0000000e+00      1s
+
+Sifting complete
+
+
+Root relaxation: objective 1.439540e+03, 599 iterations, 0.04 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 1439.54030    0   52          - 1439.54030      -     -    1s
+     0     0 1452.67279    0   38          - 1452.67279      -     -    4s
+     0     0 1453.76587    0   35          - 1453.76587      -     -    4s
+     0     0 1454.76742    0   66          - 1454.76742      -     -    4s
+     0     0 1454.84244    0   65          - 1454.84244      -     -    5s
+     0     0 1454.84244    0   59          - 1454.84244      -     -    5s
+     0     2 1459.03989    0   40          - 1459.03989      -     -   11s
+   131   133 1466.33212   53   12          - 1459.04349      -   2.5   15s
+   308   310 1476.58628  125    6          - 1459.04349      -   2.9   20s
+   475   471 1485.04384  182   14          - 1459.04349      -   3.0   25s
+   652   646 1510.40890  255   14          - 1459.04349      -   3.1   30s
+   840   829 1528.92846  327   10          - 1459.04349      -   3.3   35s
+  1088  1073 1558.98892  433   16          - 1459.04349      -   3.2   40s
+  1255  1235 1589.66802  478   12          - 1459.04349      -   3.4   45s
+  1463  1436 1609.33468  563    6          - 1459.04349      -   3.5   50s
+  1644  1609 1657.02316  634    -          - 1459.04349      -   3.5   55s
+  1862  1819 1661.06275  714    6          - 1459.04349      -   3.5   60s
+  1943  1882 1518.99642  307   26          - 1477.26602      -   3.5   65s
+  1956  1892 1482.92485  131   25          - 1478.41696      -   3.9   70s
+  1966  1900 1478.55963   55   36          - 1478.55963      -   4.2   75s
+  1977  1907 1596.79685  521   40          - 1479.31741      -   4.2   80s
+  1988  1916 1506.41496  255   33          - 1479.57590      -   4.6   85s
+  2000  1925 1595.60748  479   20          - 1481.13965      -   5.0   90s
+  2008  1932 1506.41496  255   56          - 1481.87260      -   5.4   96s
+  2019  1941 1642.34109  621   50          - 1483.99636      -   5.7  100s
+  2030  1950 1497.43358  247   59          - 1484.53041      -   6.1  105s
+  2042  1959 1538.80822  399   59          - 1487.12495      -   6.4  110s
+  2054  1968 1520.16599  315   59          - 1489.04382      -   6.8  115s
+  2066  1977 1490.58851   55   59          - 1490.58851      -   7.1  120s
+  2075  1983 1495.78118   57    8          - 1495.78118      -   7.1  125s
+  2085  1991 1597.75746  479   28          - 1496.79534      -   7.4  130s
+  2097  2000 1596.79685  521   18          - 1498.15662      -   7.7  135s
+  2111  2011 1522.91750  315   29          - 1499.15291      -   8.0  140s
+  2123  2020 1518.99642  307   48          - 1500.62205      -   8.4  145s
+  2134  2029 1520.16599  315   18          - 1503.84601      -   8.7  150s
+  2144  2036 1525.33854  317   64          - 1504.80399      -   9.2  155s
+  2156  2045 1505.11871  131   66          - 1505.11871      -   9.6  160s
+  2167  2053 1547.07050  387   32          - 1505.28318      -   9.5  165s
+  2175  2059 1505.32682   57   64          - 1505.32682      -   9.9  171s
+  2186  2068 1505.55741   55   64          - 1505.55741      -  10.2  176s
+  2197  2076 1596.79685  521   40          - 1505.61009      -  10.1  180s
+  2204  2082 1525.33854  317   33          - 1505.64566      -  10.5  185s
+  2217  2091 1596.79685  521   16          - 1505.69221      -  10.5  199s
+  2218  2093 1505.95512  262    8          - 1505.95512      -  10.8  200s
+  2278  2131 1507.57840  277   12          - 1506.73722      -  10.7  205s
+  2350  2175 1508.49224  297   40          - 1506.73722      -  10.6  210s
+  2535  2289 1512.58785  338    8          - 1506.73722      -  10.2  216s
+  2704  2406 1519.57676  384    6          - 1506.73722      -   9.9  222s
+  2875  2518 1524.08166  428   10          - 1506.73722      -   9.6  226s
+  3065  2642 1536.43828  465    8          - 1506.73722      -   9.4  230s
+  3272  2780 1542.26053  509    6          - 1506.73722      -   9.1  236s
+  3463  2904 1557.32337  567    6          - 1506.73722      -   9.0  241s
+  3645  3009 1577.57745  602    -          - 1506.73722      -   8.8  245s
+  3840  3136 1586.94140  657   19          - 1506.73722      -   8.6  250s
+  4120  3317 1605.54912  727    8          - 1506.73722      -   8.5  256s
+  4414  3513 1614.98599  800    8          - 1506.73722      -   8.4  262s
+  4572  3622 1627.81389  842    6          - 1506.73722      -   8.4  265s
+  4834  3793 1657.32736  910   14          - 1506.73722      -   8.4  271s
+  5121  3966 1718.26687  988    -          - 1506.73722      -   8.3  277s
+  5251  4047 1737.23285 1023    6          - 1506.73722      -   8.4  281s
+  5598  4279 1757.83652 1109    8          - 1506.73722      -   8.2  288s
+  5745  4379 1782.66053 1154    6          - 1506.73722      -   8.2  291s
+  5954  4508 1804.53764 1134    -          - 1506.73722      -   8.2  295s
+  6226  4684 1837.88320 1277    6          - 1506.73722      -   8.1  303s
+  6427  4819 1852.16945 1337    6          - 1506.73722      -   8.1  306s
+  6620  4947 1882.36837 1382    8          - 1506.73722      -   8.1  310s
+  6773  5043 1897.36041 1425    6          - 1506.73722      -   8.1  315s
+  7319  5355 1945.46588 1515    6          - 1506.73722      -   7.9  324s
+  7465  5422 1570.22658  452    6          - 1506.73722      -   7.9  325s
+  7674  5547 1972.79963 1572    6          - 1506.73722      -   7.8  330s
+  8061  5814 2005.44870 1624    6          - 1506.73722      -   7.7  335s
+  8443  6061 2065.45355 1679   14          - 1506.73722      -   7.6  341s
+  8813  6409 2127.64023 1730    6          - 1506.73722      -   7.5  346s
+  9151  6728 2161.85938 1773    6          - 1506.73722      -   7.4  352s
+  9500  7032 2176.81948 1810    8          - 1506.73722      -   7.4  358s
+  9860  7316 2236.74485 1871   10          - 1506.73722      -   7.4  363s
+ 10206  7653 2273.40424 1933    6          - 1506.73722      -   7.4  369s
+ 10530  7951 2321.25577 1997    6          - 1506.73722      -   7.4  374s
+ 10697  8060 1624.65738  795    -          - 1506.73722      -   7.4  375s
+ 10846  8285 2348.80246 2051    6          - 1506.73722      -   7.4  401s
+ 10848  8277 2337.14883 2052    8          - 1506.73722      -   7.4  407s
+ 11098  8497 2380.98676 2117    6          - 1506.73722      -   7.3  415s
+ 11408  8819 2467.50870 2194    6          - 1506.73722      -   7.3  424s
+ 11789  9010 1660.67221  923    -          - 1506.73722      -   7.3  425s
+ 11877  9266 2561.23060 2292    6          - 1506.73722      -   7.3  431s
+ 12296  9692 2664.40866 2392    -          - 1506.73722      -   7.2  439s
+ 12766 10138 2771.46931 2487    8          - 1506.73722      -   7.2  447s
+ 13323 10643 infeasible 2581               - 1507.12860      -   7.1  456s
+ 14111 11394 1538.03952  419    8          - 1507.12860      -   7.0  465s
+ 14826 12107 1542.26288  430    6          - 1507.12860      -   7.0  472s
+ 15069 12363 1544.98903  433    6          - 1507.12860      -   6.9  480s
+ 15705 12985 1549.81945  443   12          - 1507.12860      -   6.9  488s
+ 16278 13522 1551.60062  454    6          - 1507.12860      -   6.8  495s
+ 16882 14132 1555.24415  455    -          - 1507.12860      -   6.8  503s
+ 17435 14649 1555.53658  455   26          - 1507.12860      -   6.8  509s
+ 17740 14958 1753.50743 1070    -          - 1507.12860      -   6.7  510s
+ 17960 15217 1560.94468  476    -          - 1507.12860      -   6.7  516s
+ 18522 15744 1561.05473  476    -          - 1507.12860      -   6.7  522s
+ 18983 16144 1561.48371  476   10          - 1507.12860      -   6.7  528s
+ 19406 16600 1571.92819  528   14          - 1507.12860      -   6.7  535s
+ 20001 17076 1575.81627  534   20          - 1507.12860      -   6.7  542s
+ 20494 17619 1577.65520  542    6          - 1507.12860      -   6.6  549s
+ 20777 17881 1801.33664 1214    -          - 1507.12860      -   6.6  550s
+ 21007 18078 1584.87198  567    -          - 1507.12860      -   6.6  555s
+*21266 14775            1230    1807.4627909 1507.12860  16.6%   6.7  556s
+ 21347 14835 1588.45109  568   28 1807.46279 1507.12860  16.6%   6.7  562s
+*21403 14854            1233    1807.0556628 1507.12860  16.6%   6.7  563s
+*21423  7171             573    1589.5557111 1507.12860  5.19%   6.7  568s
+ 21477  7190     cutoff  584      1589.55571 1507.15711  5.18%   6.7  571s
+ 21624  7330 1523.37795  302   60 1589.55571 1507.15711  5.18%   6.7  578s
+ 21836  7530 1530.19266  336    8 1589.55571 1507.15711  5.18%   6.7  584s
+ 21891  7530 1534.00265  359   12 1589.55571 1507.15711  5.18%   6.7  585s
+ 22101  7794 1546.09084  399   10 1589.55571 1507.15711  5.18%   6.7  593s
+ 22351  8041 1552.78557  448    6 1589.55571 1507.15711  5.18%   6.7  597s
+ 22437  8121 1553.72157  450   21 1589.55571 1507.15711  5.18%   6.7  602s
+ 22677  8338 1560.97868  494   10 1589.55571 1507.15711  5.18%   6.7  606s
+ 22888  8516 1576.14531  509    6 1589.55571 1507.24766  5.18%   6.7  610s
+ 23159  8726 1588.77413  555   14 1589.55571 1507.32974  5.17%   6.7  615s
+ 23571  8983 1558.31885  375    8 1589.55571 1507.52377  5.16%   6.7  620s
+H23592   872                    1519.6103229 1507.64790  0.79%   6.7  620s
+ 24010  1058 1519.11201  308   34 1519.61032 1508.11539  0.76%   6.7  626s
+ 24793  1369     cutoff  279      1519.61032 1508.99786  0.70%   6.7  632s
+ 25188  1501 1519.21887  278   62 1519.61032 1509.26152  0.68%   6.8  635s
+ 25896  1652     cutoff  330      1519.61032 1510.66124  0.59%   6.9  641s
+ 26453  1740     cutoff  307      1519.61032 1512.90364  0.44%   7.1  645s
+ 26922  1831 1514.11268  275   78 1519.61032 1514.11268  0.36%   7.1  650s
+ 27627  2217 1516.08741  273   79 1519.61032 1514.62122  0.33%   7.0  655s
+ 28336  2623 1519.05525  296   16 1519.61032 1515.01176  0.30%   7.0  661s
+ 29058  2981 1518.59738  284   14 1519.61032 1515.21835  0.29%   6.9  666s
+ 29744  3373 1517.82050  292   26 1519.61032 1515.31888  0.28%   6.8  672s
+ 30142  3581 1517.35365  282   57 1519.61032 1515.37969  0.28%   6.8  677s
+ 30469  3751 1517.32888  282   56 1519.61032 1515.41008  0.28%   6.8  680s
+ 31168  4118 1517.49024  279   60 1519.61032 1515.51922  0.27%   6.7  685s
+ 31858  4455 1517.76627  285   20 1519.61032 1515.58578  0.26%   6.7  690s
+ 32538  4799 1517.38112  286   82 1519.61032 1515.66224  0.26%   6.6  695s
+ 33209  5129     cutoff  284      1519.61032 1515.71082  0.26%   6.6  700s
+ 33563  5224 1517.22458  272  103 1519.61032 1515.74266  0.25%   6.5  706s
+ 34457  5702 1516.50353  273   72 1519.61032 1515.81041  0.25%   6.5  711s
+ 35306  6137 1516.63134  285   14 1519.61032 1515.86387  0.25%   6.4  716s
+ 36125  6587 1516.33041  276   67 1519.61032 1515.92787  0.24%   6.4  721s
+ 36845  6963 1516.81624  278   20 1519.61032 1515.96994  0.24%   6.3  728s
+ 37125  7090     cutoff  311      1519.61032 1515.97624  0.24%   6.3  733s
+ 37755  7415 1516.73703  270   85 1519.61032 1516.01151  0.24%   6.3  738s
+ 38529  7784 1517.33112  289   12 1519.61032 1516.03576  0.24%   6.2  743s
+ 39264  8136 1518.63403  299   49 1519.61032 1516.06662  0.23%   6.2  747s
+ 39923  8430     cutoff  315      1519.61032 1516.10345  0.23%   6.1  752s
+ 40665  8790 1518.25663  291   70 1519.61032 1516.13348  0.23%   6.1  756s
+ 41369  9131 1516.22061  283   21 1519.61032 1516.16978  0.23%   6.1  760s
+ 42024  9432 1519.58529  276   12 1519.61032 1516.18964  0.23%   6.0  765s
+ 43405 10096     cutoff  298      1519.61032 1516.24186  0.22%   6.0  773s
+ 44014 10370 1517.35077  289   24 1519.61032 1516.25920  0.22%   6.0  777s
+ 44677 10669     cutoff  295      1519.61032 1516.27775  0.22%   5.9  781s
+ 45291 10928     cutoff  307      1519.61032 1516.30047  0.22%   5.9  785s
+ 46503 11474 1519.07225  293   22 1519.61032 1516.34222  0.22%   5.9  793s
+ 47071 11694 1519.08249  299    6 1519.61032 1516.36090  0.21%   5.8  796s
+ 47667 11937     cutoff  308      1519.61032 1516.37336  0.21%   5.8  800s
+ 48560 12311 1518.69836  290   26 1519.61032 1516.39642  0.21%   5.8  805s
+ 49437 12640     cutoff  279      1519.61032 1516.42822  0.21%   5.8  814s
+ 50033 12935 1516.63447  281   28 1519.61032 1516.44635  0.21%   5.7  817s
+ 50582 13171 1517.48618  283   70 1519.61032 1516.46575  0.21%   5.7  821s
+ 51128 13374 1519.51294  289   24 1519.61032 1516.48570  0.21%   5.7  825s
+ 52236 13790 infeasible  306      1519.61032 1516.52235  0.20%   5.7  833s
+
+Cutting planes:
+  Gomory: 10
+  MIR: 2
+  Flow cover: 11
+  Zero half: 45
+  Lazy constraints: 166
+
+Explored 52779 nodes (299827 simplex iterations) in 833.30 seconds
+Thread count was 4 (of 4 available processors)
+
+Solve interrupted
+Best objective 1.519610322948e+03, best bound 1.516531439471e+03, gap 0.2026%
+
+Gurobi 6.5.0 (mac64) logging started Mon Jan  4 17:05:56 2016
+
+Changed value of parameter TimeLimit to 10.0
+   Prev: 1e+100  Min: 0.0  Max: 1e+100  Default: 1e+100
+Optimize a model with 1000 rows, 1000000 columns and 1000000 nonzeros
+Coefficient statistics:
+  Matrix range    [1e+00, 1e+00]
+  Objective range [7e+02, 1e+06]
+  Bounds range    [1e+00, 1e+00]
+  RHS range       [2e+00, 2e+00]
+Found heuristic solution: objective 1.15469e+09
+Presolve removed 0 rows and 0 columns (presolve time = 6s) ...
+Presolve time: 10.78s
+
+Explored 0 nodes (0 simplex iterations) in 10.99 seconds
+Thread count was 1 (of 4 available processors)
+
+Time limit reached
+Best objective 1.154692273539e+09, best bound -, gap -
+Changed value of parameter TimeLimit to 100.0
+   Prev: 1e+100  Min: 0.0  Max: 1e+100  Default: 1e+100
+Optimize a model with 100 rows, 10000 columns and 10000 nonzeros
+Coefficient statistics:
+  Matrix range    [1e+00, 1e+00]
+  Objective range [1e+01, 4e+03]
+  Bounds range    [1e+00, 1e+00]
+  RHS range       [2e+00, 2e+00]
+Found heuristic solution: objective 331430
+Presolve removed 99 rows and 9900 columns
+Presolve time: 0.08s
+Presolved: 1 rows, 100 columns, 100 nonzeros
+Found heuristic solution: objective 14739.734006
+Variable types: 0 continuous, 100 integer (100 binary)
+Found heuristic solution: objective 14218.951419
+
+Explored 0 nodes (0 simplex iterations) in 0.09 seconds
+Thread count was 4 (of 4 available processors)
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 1.421895141923e+04, best bound 1.421895141923e+04, gap 0.0%
+Changed value of parameter TimeLimit to 100.0
+   Prev: 1e+100  Min: 0.0  Max: 1e+100  Default: 1e+100
+Changed value of parameter TimeLimit to 100.0
+   Prev: 1e+100  Min: 0.0  Max: 1e+100  Default: 1e+100
+Optimize a model with 100 rows, 10000 columns and 10000 nonzeros
+Coefficient statistics:
+  Matrix range    [1e+00, 1e+00]
+  Objective range [1e+00, 1e+00]
+  Bounds range    [1e+00, 1e+00]
+  RHS range       [2e+00, 2e+00]
+Found heuristic solution: objective 200
+Presolve removed 100 rows and 10000 columns
+Presolve time: 0.02s
+Presolve: All rows and columns removed
+
+Explored 0 nodes (0 simplex iterations) in 0.03 seconds
+Thread count was 1 (of 4 available processors)
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 2.000000000000e+02, best bound 2.000000000000e+02, gap 0.0%
+Changed value of parameter TimeLimit to 100.0
+   Prev: 1e+100  Min: 0.0  Max: 1e+100  Default: 1e+100
+Changed value of parameter TimeLimit to 100.0
+   Prev: 1e+100  Min: 0.0  Max: 1e+100  Default: 1e+100
+Optimize a model with 10299 rows, 20000 columns and 40000 nonzeros
+Coefficient statistics:
+  Matrix range    [1e+00, 1e+02]
+  Objective range [1e+00, 1e+00]
+  Bounds range    [1e+00, 1e+00]
+  RHS range       [1e+00, 1e+00]
+Presolve removed 0 rows and 10000 columns
+Presolve time: 0.01s
+
+Explored 0 nodes (0 simplex iterations) in 0.02 seconds
+Thread count was 1 (of 4 available processors)
+
+Model is infeasible
+Best objective -, best bound -, gap -
+Changed value of parameter TimeLimit to 100.0
+   Prev: 1e+100  Min: 0.0  Max: 1e+100  Default: 1e+100
+Optimize a model with 10299 rows, 20000 columns and 40000 nonzeros
+Coefficient statistics:
+  Matrix range    [1e+00, 1e+02]
+  Objective range [1e+00, 1e+00]
+  Bounds range    [1e+00, 1e+00]
+  RHS range       [1e+00, 1e+00]
+Presolve removed 0 rows and 10000 columns
+Presolve time: 0.01s
+
+Explored 0 nodes (0 simplex iterations) in 0.03 seconds
+Thread count was 1 (of 4 available processors)
+
+Model is infeasible
+Best objective -, best bound -, gap -
+Optimize a model with 10299 rows, 20000 columns and 40000 nonzeros
+Coefficient statistics:
+  Matrix range    [1e+00, 1e+02]
+  Objective range [1e+00, 1e+00]
+  Bounds range    [1e+00, 1e+00]
+  RHS range       [1e+00, 1e+00]
+Presolve removed 0 rows and 10000 columns
+Presolve time: 0.01s
+
+Explored 0 nodes (0 simplex iterations) in 0.02 seconds
+Thread count was 1 (of 4 available processors)
+
+Model is infeasible
+Best objective -, best bound -, gap -
+Changed value of parameter TimeLimit to 100.0
+   Prev: 1e+100  Min: 0.0  Max: 1e+100  Default: 1e+100
+Optimize a model with 10200 rows, 20000 columns and 40000 nonzeros
+Coefficient statistics:
+  Matrix range    [1e+00, 1e+02]
+  Objective range [1e+00, 1e+00]
+  Bounds range    [1e+00, 1e+00]
+  RHS range       [1e+00, 1e+00]
+Found heuristic solution: objective 100
+Presolve removed 10200 rows and 20000 columns
+Presolve time: 0.02s
+Presolve: All rows and columns removed
+
+Explored 0 nodes (0 simplex iterations) in 0.03 seconds
+Thread count was 1 (of 4 available processors)
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 1.000000000000e+02, best bound 1.000000000000e+02, gap 0.0%
+Parameter TimeLimit unchanged
+   Value: 100.0  Min: 0.0  Max: 1e+100  Default: 1e+100
+Optimize a model with 20299 rows, 20000 columns and 60000 nonzeros
+Coefficient statistics:
+  Matrix range    [1e+00, 1e+02]
+  Objective range [1e+00, 1e+00]
+  Bounds range    [1e+00, 1e+00]
+  RHS range       [1e+00, 1e+00]
+Presolve removed 0 rows and 10000 columns
+Presolve time: 0.01s
+
+Explored 0 nodes (0 simplex iterations) in 0.03 seconds
+Thread count was 1 (of 4 available processors)
+
+Model is infeasible
+Best objective -, best bound -, gap -
+Changed value of parameter TimeLimit to 100.0
+   Prev: 1e+100  Min: 0.0  Max: 1e+100  Default: 1e+100
+Optimize a model with 10299 rows, 20000 columns and 40000 nonzeros
+Coefficient statistics:
+  Matrix range    [1e+00, 1e+02]
+  Objective range [1e+00, 1e+00]
+  Bounds range    [1e+00, 1e+00]
+  RHS range       [1e+00, 1e+00]
+Presolve removed 0 rows and 10000 columns
+Presolve time: 0.01s
+
+Explored 0 nodes (0 simplex iterations) in 0.03 seconds
+Thread count was 1 (of 4 available processors)
+
+Model is infeasible
+Best objective -, best bound -, gap -
+Changed value of parameter TimeLimit to 100.0
+   Prev: 1e+100  Min: 0.0  Max: 1e+100  Default: 1e+100
+Optimize a model with 299 rows, 20000 columns and 20000 nonzeros
+Coefficient statistics:
+  Matrix range    [1e+00, 1e+00]
+  Objective range [1e+00, 1e+00]
+  Bounds range    [1e+00, 1e+00]
+  RHS range       [1e+00, 1e+00]
+Presolve removed 0 rows and 10000 columns
+Presolve time: 0.00s
+
+Explored 0 nodes (0 simplex iterations) in 0.01 seconds
+Thread count was 1 (of 4 available processors)
+
+Model is infeasible
+Best objective -, best bound -, gap -
+Changed value of parameter TimeLimit to 100.0
+   Prev: 1e+100  Min: 0.0  Max: 1e+100  Default: 1e+100
+Optimize a model with 299 rows, 20000 columns and 20000 nonzeros
+Coefficient statistics:
+  Matrix range    [1e+00, 1e+00]
+  Objective range [1e+00, 1e+00]
+  Bounds range    [1e+00, 1e+00]
+  RHS range       [1e+00, 1e+00]
+Presolve removed 0 rows and 10000 columns
+Presolve time: 0.00s
+
+Explored 0 nodes (0 simplex iterations) in 0.01 seconds
+Thread count was 1 (of 4 available processors)
+
+Model is infeasible
+Best objective -, best bound -, gap -
+Changed value of parameter TimeLimit to 100.0
+   Prev: 1e+100  Min: 0.0  Max: 1e+100  Default: 1e+100
+Optimize a model with 299 rows, 20000 columns and 20000 nonzeros
+Coefficient statistics:
+  Matrix range    [1e+00, 1e+00]
+  Objective range [1e+00, 1e+00]
+  Bounds range    [1e+00, 1e+00]
+  RHS range       [1e+00, 1e+00]
+Presolve removed 0 rows and 10000 columns
+Presolve time: 0.00s
+
+Explored 0 nodes (0 simplex iterations) in 0.01 seconds
+Thread count was 1 (of 4 available processors)
+
+Model is infeasible
+Best objective -, best bound -, gap -
+Changed value of parameter TimeLimit to 100.0
+   Prev: 1e+100  Min: 0.0  Max: 1e+100  Default: 1e+100
+Optimize a model with 10200 rows, 20000 columns and 40000 nonzeros
+Coefficient statistics:
+  Matrix range    [1e+00, 1e+02]
+  Objective range [1e+00, 1e+00]
+  Bounds range    [1e+00, 1e+00]
+  RHS range       [1e+00, 1e+00]
+Found heuristic solution: objective 100
+Presolve removed 10200 rows and 20000 columns
+Presolve time: 0.02s
+Presolve: All rows and columns removed
+
+Explored 0 nodes (0 simplex iterations) in 0.03 seconds
+Thread count was 1 (of 4 available processors)
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 1.000000000000e+02, best bound 1.000000000000e+02, gap 0.0%
+Parameter TimeLimit unchanged
+   Value: 100.0  Min: 0.0  Max: 1e+100  Default: 1e+100
+Optimize a model with 20400 rows, 40000 columns and 80000 nonzeros
+Coefficient statistics:
+  Matrix range    [1e+00, 1e+02]
+  Objective range [1e+00, 1e+00]
+  Bounds range    [1e+00, 1e+00]
+  RHS range       [1e+00, 1e+00]
+Found heuristic solution: objective 100
+Presolve removed 20400 rows and 40000 columns
+Presolve time: 0.04s
+Presolve: All rows and columns removed
+
+Explored 0 nodes (0 simplex iterations) in 0.06 seconds
+Thread count was 1 (of 4 available processors)
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 1.000000000000e+02, best bound 1.000000000000e+02, gap 0.0%
+Changed value of parameter TimeLimit to 100.0
+   Prev: 1e+100  Min: 0.0  Max: 1e+100  Default: 1e+100
+Optimize a model with 10200 rows, 20000 columns and 40000 nonzeros
+Coefficient statistics:
+  Matrix range    [1e+00, 1e+02]
+  Objective range [1e+00, 1e+00]
+  Bounds range    [1e+00, 1e+00]
+  RHS range       [1e+00, 1e+00]
+Found heuristic solution: objective 100
+Presolve removed 10200 rows and 20000 columns
+Presolve time: 0.02s
+Presolve: All rows and columns removed
+
+Explored 0 nodes (0 simplex iterations) in 0.03 seconds
+Thread count was 1 (of 4 available processors)
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 1.000000000000e+02, best bound 1.000000000000e+02, gap 0.0%
+
+Gurobi 6.5.0 (mac64) logging started Mon Jan  4 18:07:53 2016
+
+Changed value of parameter TimeLimit to 100.0
+   Prev: 1e+100  Min: 0.0  Max: 1e+100  Default: 1e+100
+Optimize a model with 10200 rows, 20000 columns and 40000 nonzeros
+Coefficient statistics:
+  Matrix range    [1e+00, 1e+02]
+  Objective range [1e+00, 1e+00]
+  Bounds range    [1e+00, 1e+00]
+  RHS range       [1e+00, 1e+00]
+Found heuristic solution: objective 100
+Presolve removed 10200 rows and 20000 columns
+Presolve time: 0.02s
+Presolve: All rows and columns removed
+
+Explored 0 nodes (0 simplex iterations) in 0.03 seconds
+Thread count was 1 (of 4 available processors)
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 1.000000000000e+02, best bound 1.000000000000e+02, gap 0.0%
+
+Gurobi 6.5.0 (mac64) logging started Mon Jan  4 18:08:32 2016
+
+Changed value of parameter TimeLimit to 100.0
+   Prev: 1e+100  Min: 0.0  Max: 1e+100  Default: 1e+100
+Optimize a model with 10299 rows, 20000 columns and 40000 nonzeros
+Coefficient statistics:
+  Matrix range    [1e+00, 1e+02]
+  Objective range [1e+00, 1e+00]
+  Bounds range    [1e+00, 1e+00]
+  RHS range       [1e+00, 1e+00]
+Presolve removed 0 rows and 10000 columns
+Presolve time: 0.01s
+
+Explored 0 nodes (0 simplex iterations) in 0.02 seconds
+Thread count was 1 (of 4 available processors)
+
+Model is infeasible
+Best objective -, best bound -, gap -
+Changed value of parameter TimeLimit to 100.0
+   Prev: 1e+100  Min: 0.0  Max: 1e+100  Default: 1e+100
+Optimize a model with 10299 rows, 20000 columns and 40000 nonzeros
+Coefficient statistics:
+  Matrix range    [1e+00, 2e+02]
+  Objective range [1e+00, 1e+00]
+  Bounds range    [1e+00, 1e+00]
+  RHS range       [1e+00, 1e+00]
+Presolve removed 0 rows and 10000 columns
+Presolve time: 0.01s
+
+Explored 0 nodes (0 simplex iterations) in 0.02 seconds
+Thread count was 1 (of 4 available processors)
+
+Model is infeasible
+Best objective -, best bound -, gap -
+
+Gurobi 6.5.0 (mac64) logging started Mon Jan  4 19:11:55 2016
+
+Changed value of parameter TimeLimit to 100.0
+   Prev: 1e+100  Min: 0.0  Max: 1e+100  Default: 1e+100
+Optimize a model with 10298 rows, 20000 columns and 39800 nonzeros
+Coefficient statistics:
+  Matrix range    [1e+00, 2e+02]
+  Objective range [4e-01, 4e+02]
+  Bounds range    [1e+00, 1e+00]
+  RHS range       [1e+00, 1e+00]
+Presolve removed 0 rows and 10001 columns
+Presolve time: 0.01s
+
+Explored 0 nodes (0 simplex iterations) in 0.02 seconds
+Thread count was 1 (of 4 available processors)
+
+Model is infeasible
+Best objective -, best bound -, gap -
+Changed value of parameter TimeLimit to 100.0
+   Prev: 1e+100  Min: 0.0  Max: 1e+100  Default: 1e+100
+Optimize a model with 10299 rows, 20000 columns and 40000 nonzeros
+Coefficient statistics:
+  Matrix range    [1e+00, 1e+02]
+  Objective range [4e-01, 4e+02]
+  Bounds range    [1e+00, 1e+00]
+  RHS range       [1e+00, 1e+00]
+Presolve removed 0 rows and 10000 columns
+Presolve time: 0.01s
+
+Explored 0 nodes (0 simplex iterations) in 0.02 seconds
+Thread count was 1 (of 4 available processors)
+
+Model is infeasible
+Best objective -, best bound -, gap -
+Changed value of parameter TimeLimit to 100.0
+   Prev: 1e+100  Min: 0.0  Max: 1e+100  Default: 1e+100
+Optimize a model with 299 rows, 20000 columns and 20000 nonzeros
+Coefficient statistics:
+  Matrix range    [1e+00, 1e+00]
+  Objective range [4e-01, 4e+02]
+  Bounds range    [1e+00, 1e+00]
+  RHS range       [1e+00, 1e+00]
+Presolve removed 0 rows and 10000 columns
+Presolve time: 0.00s
+
+Explored 0 nodes (0 simplex iterations) in 0.01 seconds
+Thread count was 1 (of 4 available processors)
+
+Model is infeasible
+Best objective -, best bound -, gap -
+Changed value of parameter TimeLimit to 100.0
+   Prev: 1e+100  Min: 0.0  Max: 1e+100  Default: 1e+100
+Optimize a model with 10200 rows, 20000 columns and 40000 nonzeros
+Coefficient statistics:
+  Matrix range    [1e+00, 1e+02]
+  Objective range [4e-01, 4e+02]
+  Bounds range    [1e+00, 1e+00]
+  RHS range       [1e+00, 1e+00]
+Found heuristic solution: objective 12107.5
+Presolve removed 10200 rows and 20000 columns
+Presolve time: 0.02s
+Presolve: All rows and columns removed
+
+Explored 0 nodes (0 simplex iterations) in 0.03 seconds
+Thread count was 1 (of 4 available processors)
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 0.000000000000e+00, best bound 0.000000000000e+00, gap 0.0%
+Changed value of parameter TimeLimit to 100.0
+   Prev: 1e+100  Min: 0.0  Max: 1e+100  Default: 1e+100
+Optimize a model with 10200 rows, 20000 columns and 40000 nonzeros
+Coefficient statistics:
+  Matrix range    [1e+00, 1e+02]
+  Objective range [4e-01, 4e+02]
+  Bounds range    [1e+00, 1e+00]
+  RHS range       [1e+00, 1e+00]
+Found heuristic solution: objective 0
+Presolve removed 10200 rows and 20000 columns
+Presolve time: 0.02s
+Presolve: All rows and columns removed
+
+Explored 0 nodes (0 simplex iterations) in 0.03 seconds
+Thread count was 1 (of 4 available processors)
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 0.000000000000e+00, best bound 0.000000000000e+00, gap 0.0%
+Changed value of parameter TimeLimit to 100.0
+   Prev: 1e+100  Min: 0.0  Max: 1e+100  Default: 1e+100
+Optimize a model with 10200 rows, 20000 columns and 40000 nonzeros
+Coefficient statistics:
+  Matrix range    [1e+00, 1e+02]
+  Objective range [4e-01, 4e+02]
+  Bounds range    [1e+00, 1e+00]
+  RHS range       [1e+00, 1e+00]
+Found heuristic solution: objective 0
+Presolve removed 10200 rows and 20000 columns
+Presolve time: 0.02s
+Presolve: All rows and columns removed
+
+Explored 0 nodes (0 simplex iterations) in 0.03 seconds
+Thread count was 1 (of 4 available processors)
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 0.000000000000e+00, best bound 0.000000000000e+00, gap 0.0%
+Changed value of parameter TimeLimit to 100.0
+   Prev: 1e+100  Min: 0.0  Max: 1e+100  Default: 1e+100
+Optimize a model with 10300 rows, 20000 columns and 40000 nonzeros
+Coefficient statistics:
+  Matrix range    [1e+00, 1e+02]
+  Objective range [4e-01, 4e+02]
+  Bounds range    [1e+00, 1e+00]
+  RHS range       [1e+00, 1e+00]
+Presolve removed 0 rows and 10000 columns
+Presolve time: 0.01s
+
+Explored 0 nodes (0 simplex iterations) in 0.02 seconds
+Thread count was 1 (of 4 available processors)
+
+Model is infeasible
+Best objective -, best bound -, gap -
+Changed value of parameter TimeLimit to 100.0
+   Prev: 1e+100  Min: 0.0  Max: 1e+100  Default: 1e+100
+Optimize a model with 10299 rows, 20000 columns and 40000 nonzeros
+Coefficient statistics:
+  Matrix range    [1e+00, 1e+02]
+  Objective range [4e-01, 4e+02]
+  Bounds range    [1e+00, 1e+00]
+  RHS range       [1e+00, 2e+00]
+Presolve removed 0 rows and 10000 columns
+Presolve time: 0.01s
+
+Explored 0 nodes (0 simplex iterations) in 0.02 seconds
+Thread count was 1 (of 4 available processors)
+
+Model is infeasible
+Best objective -, best bound -, gap -
+Changed value of parameter TimeLimit to 100.0
+   Prev: 1e+100  Min: 0.0  Max: 1e+100  Default: 1e+100
+Optimize a model with 10299 rows, 20000 columns and 40000 nonzeros
+Coefficient statistics:
+  Matrix range    [1e+00, 1e+02]
+  Objective range [4e-01, 4e+02]
+  Bounds range    [1e+00, 1e+00]
+  RHS range       [1e+00, 2e+00]
+Presolve removed 0 rows and 10000 columns
+Presolve time: 0.01s
+
+Explored 0 nodes (0 simplex iterations) in 0.02 seconds
+Thread count was 1 (of 4 available processors)
+
+Model is infeasible
+Best objective -, best bound -, gap -
+Changed value of parameter TimeLimit to 100.0
+   Prev: 1e+100  Min: 0.0  Max: 1e+100  Default: 1e+100
+Optimize a model with 10398 rows, 20000 columns and 40099 nonzeros
+Coefficient statistics:
+  Matrix range    [1e+00, 1e+02]
+  Objective range [4e-01, 4e+02]
+  Bounds range    [1e+00, 1e+00]
+  RHS range       [1e+00, 2e+00]
+Presolve removed 0 rows and 10000 columns
+Presolve time: 0.01s
+
+Explored 0 nodes (0 simplex iterations) in 0.02 seconds
+Thread count was 1 (of 4 available processors)
+
+Model is infeasible
+Best objective -, best bound -, gap -
+Changed value of parameter TimeLimit to 100.0
+   Prev: 1e+100  Min: 0.0  Max: 1e+100  Default: 1e+100
+Optimize a model with 10299 rows, 20000 columns and 40099 nonzeros
+Coefficient statistics:
+  Matrix range    [1e+00, 1e+02]
+  Objective range [4e-01, 4e+02]
+  Bounds range    [1e+00, 1e+00]
+  RHS range       [2e+00, 2e+00]
+Found heuristic solution: objective 0
+Presolve removed 10299 rows and 20000 columns
+Presolve time: 0.02s
+Presolve: All rows and columns removed
+
+Explored 0 nodes (0 simplex iterations) in 0.03 seconds
+Thread count was 1 (of 4 available processors)
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 0.000000000000e+00, best bound 0.000000000000e+00, gap 0.0%
+Changed value of parameter TimeLimit to 100.0
+   Prev: 1e+100  Min: 0.0  Max: 1e+100  Default: 1e+100
+Optimize a model with 10299 rows, 20000 columns and 40099 nonzeros
+Coefficient statistics:
+  Matrix range    [1e+00, 1e+02]
+  Objective range [4e-01, 4e+02]
+  Bounds range    [1e+00, 1e+00]
+  RHS range       [2e+00, 2e+00]
+Found heuristic solution: objective 23482
+Presolve removed 10298 rows and 19900 columns
+Presolve time: 0.09s
+Presolved: 1 rows, 100 columns, 100 nonzeros
+Found heuristic solution: objective 2742.5587591
+Variable types: 0 continuous, 100 integer (100 binary)
+Found heuristic solution: objective 2733.0365944
+
+Explored 0 nodes (0 simplex iterations) in 0.10 seconds
+Thread count was 4 (of 4 available processors)
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 2.733036594432e+03, best bound 2.733036594432e+03, gap 0.0%
+Changed value of parameter TimeLimit to 100.0
+   Prev: 1e+100  Min: 0.0  Max: 1e+100  Default: 1e+100
+Optimize a model with 10299 rows, 20000 columns and 40099 nonzeros
+Coefficient statistics:
+  Matrix range    [1e+00, 1e+02]
+  Objective range [4e-01, 4e+02]
+  Bounds range    [1e+00, 1e+00]
+  RHS range       [1e+00, 1e+00]
+Found heuristic solution: objective 12458.8
+Presolve removed 10299 rows and 20000 columns
+Presolve time: 0.02s
+Presolve: All rows and columns removed
+
+Explored 0 nodes (0 simplex iterations) in 0.03 seconds
+Thread count was 1 (of 4 available processors)
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 9.886067924657e+02, best bound 9.886067924657e+02, gap 0.0%
+Changed value of parameter TimeLimit to 100.0
+   Prev: 1e+100  Min: 0.0  Max: 1e+100  Default: 1e+100
+Optimize a model with 10300 rows, 20000 columns and 40100 nonzeros
+Coefficient statistics:
+  Matrix range    [1e+00, 1e+02]
+  Objective range [4e-01, 4e+02]
+  Bounds range    [1e+00, 1e+00]
+  RHS range       [1e+00, 1e+00]
+Found heuristic solution: objective 12458.8
+Presolve removed 10300 rows and 20000 columns
+Presolve time: 0.02s
+Presolve: All rows and columns removed
+
+Explored 0 nodes (0 simplex iterations) in 0.03 seconds
+Thread count was 1 (of 4 available processors)
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 1.001737221576e+03, best bound 1.001737221576e+03, gap 0.0%
+Changed value of parameter TimeLimit to 100.0
+   Prev: 1e+100  Min: 0.0  Max: 1e+100  Default: 1e+100
+Optimize a model with 130 rows, 200 columns and 410 nonzeros
+Coefficient statistics:
+  Matrix range    [1e+00, 1e+01]
+  Objective range [1e+01, 2e+02]
+  Bounds range    [1e+00, 1e+00]
+  RHS range       [1e+00, 1e+00]
+Found heuristic solution: objective 804.046
+Presolve removed 130 rows and 200 columns
+Presolve time: 0.00s
+Presolve: All rows and columns removed
+
+Explored 0 nodes (0 simplex iterations) in 0.01 seconds
+Thread count was 1 (of 4 available processors)
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 3.415612277251e+02, best bound 3.415612277251e+02, gap 0.0%
+Changed value of parameter TimeLimit to 100.0
+   Prev: 1e+100  Min: 0.0  Max: 1e+100  Default: 1e+100
+Optimize a model with 130 rows, 200 columns and 410 nonzeros
+Coefficient statistics:
+  Matrix range    [1e+00, 1e+01]
+  Objective range [1e+01, 2e+02]
+  Bounds range    [1e+00, 1e+00]
+  RHS range       [1e+00, 1e+00]
+Found heuristic solution: objective 804.046
+Presolve removed 130 rows and 200 columns
+Presolve time: 0.00s
+Presolve: All rows and columns removed
+
+Explored 0 nodes (0 simplex iterations) in 0.01 seconds
+Thread count was 1 (of 4 available processors)
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 3.415612277251e+02, best bound 3.415612277251e+02, gap 0.0%
+Changed value of parameter TimeLimit to 100.0
+   Prev: 1e+100  Min: 0.0  Max: 1e+100  Default: 1e+100
+Optimize a model with 139 rows, 200 columns and 410 nonzeros
+Coefficient statistics:
+  Matrix range    [1e+00, 1e+01]
+  Objective range [1e+01, 2e+02]
+  Bounds range    [1e+00, 1e+00]
+  RHS range       [1e+00, 1e+00]
+Presolve removed 0 rows and 100 columns
+Presolve time: 0.00s
+
+Explored 0 nodes (0 simplex iterations) in 0.00 seconds
+Thread count was 1 (of 4 available processors)
+
+Model is infeasible
+Best objective -, best bound -, gap -
+Changed value of parameter TimeLimit to 100.0
+   Prev: 1e+100  Min: 0.0  Max: 1e+100  Default: 1e+100
+Optimize a model with 139 rows, 200 columns and 410 nonzeros
+Coefficient statistics:
+  Matrix range    [1e+00, 1e+01]
+  Objective range [1e+01, 2e+02]
+  Bounds range    [1e+00, 1e+00]
+  RHS range       [1e+00, 1e+00]
+Presolve removed 0 rows and 100 columns
+Presolve time: 0.00s
+
+Explored 0 nodes (0 simplex iterations) in 0.00 seconds
+Thread count was 1 (of 4 available processors)
+
+Model is infeasible
+Best objective -, best bound -, gap -
+Changed value of parameter TimeLimit to 100.0
+   Prev: 1e+100  Min: 0.0  Max: 1e+100  Default: 1e+100
+Optimize a model with 139 rows, 200 columns and 410 nonzeros
+Coefficient statistics:
+  Matrix range    [1e+00, 1e+01]
+  Objective range [1e+01, 2e+02]
+  Bounds range    [1e+00, 1e+00]
+  RHS range       [1e+00, 1e+00]
+Presolve removed 0 rows and 100 columns
+Presolve time: 0.00s
+
+Explored 0 nodes (0 simplex iterations) in 0.00 seconds
+Thread count was 1 (of 4 available processors)
+
+Model is infeasible
+Best objective -, best bound -, gap -
+Changed value of parameter TimeLimit to 100.0
+   Prev: 1e+100  Min: 0.0  Max: 1e+100  Default: 1e+100
+Optimize a model with 139 rows, 200 columns and 410 nonzeros
+Coefficient statistics:
+  Matrix range    [1e+00, 1e+01]
+  Objective range [1e+01, 2e+02]
+  Bounds range    [1e+00, 1e+00]
+  RHS range       [1e+00, 1e+00]
+Presolve removed 0 rows and 100 columns
+Presolve time: 0.00s
+
+Explored 0 nodes (0 simplex iterations) in 0.00 seconds
+Thread count was 1 (of 4 available processors)
+
+Model is infeasible
+Best objective -, best bound -, gap -
+
+Gurobi 6.5.0 (mac64) logging started Mon Jan  4 20:25:48 2016
+
+Changed value of parameter LazyConstraints to 1
+   Prev: 0  Min: 0  Max: 1  Default: 0
+Optimize a model with 200 rows, 20100 columns and 40000 nonzeros
+Coefficient statistics:
+  Matrix range    [1e+00, 1e+00]
+  Objective range [1e+00, 1e+02]
+  Bounds range    [1e+00, 1e+00]
+  RHS range       [2e+00, 2e+00]
+Presolve removed 0 rows and 200 columns
+Presolve time: 0.04s
+Presolved: 200 rows, 19900 columns, 39800 nonzeros
+Variable types: 0 continuous, 19900 integer (19900 binary)
+
+Root relaxation: objective 9.819618e+02, 303 iterations, 0.01 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0  981.96181    0   58          -  981.96181      -     -    0s
+     0     0  992.86349    0   34          -  992.86349      -     -    0s
+     0     0  994.27136    0   35          -  994.27136      -     -    0s
+     0     0  994.51056    0   31          -  994.51056      -     -    0s
+     0     0  994.51730    0   36          -  994.51730      -     -    0s
+     0     0  994.56357    0   30          -  994.56357      -     -    0s
+     0     0  994.56357    0   30          -  994.56357      -     -    0s
+     0     2 1004.99718    0   52          - 1004.99718      -     -    1s
+   924   896 1159.68132  359    -          - 1010.26571      -   4.1    5s
+  1178  1119 1052.28475   32    6          - 1043.16581      -   4.8   10s
+  2489  1959 1182.74056  336    -          - 1043.16581      -   5.4   15s
+  3964  2895 1766.21150  740    -          - 1043.16581      -   5.8   20s
+* 5484  4134             969    2062.5292686 1043.53085  49.4%   5.9   24s
+  5548  4146 1345.60787  399    8 2062.52927 1043.53085  49.4%   5.9   25s
+H 5582    36                    1044.8521839 1043.53085  0.13%   5.9   25s
+
+Cutting planes:
+  Gomory: 15
+  MIR: 1
+  Flow cover: 4
+  Zero half: 16
+  Lazy constraints: 58
+
+Explored 5702 nodes (34026 simplex iterations) in 25.60 seconds
+Thread count was 4 (of 4 available processors)
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 1.044852183910e+03, best bound 1.044852183910e+03, gap 0.0%
+
+Gurobi 6.5.0 (mac64) logging started Mon Jan  4 20:26:25 2016
+
+Changed value of parameter LazyConstraints to 1
+   Prev: 0  Min: 0  Max: 1  Default: 0
+Optimize a model with 400 rows, 80200 columns and 160000 nonzeros
+Coefficient statistics:
+  Matrix range    [1e+00, 1e+00]
+  Objective range [1e+00, 1e+02]
+  Bounds range    [1e+00, 1e+00]
+  RHS range       [2e+00, 2e+00]
+Presolve removed 0 rows and 400 columns
+Presolve time: 0.31s
+Presolved: 400 rows, 79800 columns, 159600 nonzeros
+Variable types: 0 continuous, 79800 integer (79800 binary)
+
+Starting sifting (using dual simplex for sub-problems)...
+
+    Iter     Pivots    Primal Obj      Dual Obj        Time
+       0          0     infinity      0.0000000e+00      1s
+
+Sifting complete
+
+
+Root relaxation: objective 1.439540e+03, 599 iterations, 0.03 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 1439.54030    0   52          - 1439.54030      -     -    0s
+     0     0 1452.67279    0   38          - 1452.67279      -     -    3s
+     0     0 1453.76587    0   35          - 1453.76587      -     -    3s
+     0     0 1454.76742    0   66          - 1454.76742      -     -    3s
+     0     0 1454.84244    0   65          - 1454.84244      -     -    3s
+     0     0 1454.84244    0   59          - 1454.84244      -     -    4s
+     0     2 1459.03989    0   40          - 1459.03989      -     -    8s
+    99   101 1464.86059   39   18          - 1459.04349      -   2.7   10s
+   359   359 1477.66207  136    6          - 1459.04349      -   2.9   15s
+   618   613 1497.00129  241    6          - 1459.04349      -   3.0   20s
+   944   937 1536.79907  376    6          - 1459.04349      -   3.2   25s
+  1227  1205 1585.66145  469   14          - 1459.04349      -   3.4   30s
+  1524  1494 1618.27698  584    8          - 1459.04349      -   3.5   35s
+  1862  1819 1661.06275  714    6          - 1459.04349      -   3.5   40s
+  1951  1888 1522.91750  315   56          - 1477.57800      -   3.9   45s
+  1968  1901 1506.41496  255   24          - 1478.86026      -   4.2   50s
+  1984  1913 1525.33854  317   48          - 1479.32795      -   4.6   55s
+  2006  1931 1481.87260   55   59          - 1481.87260      -   5.4   60s
+  2019  1941 1642.34109  621   50          - 1483.99636      -   5.7   65s
+  2035  1953 1486.48169   57   37          - 1486.48169      -   6.0   70s
+  2055  1969 1489.04382   57   59          - 1489.04382      -   6.8   75s
+  2073  1982 1494.20092   75   20          - 1494.20092      -   7.1   80s
+  2090  1994 1497.67632  247   14          - 1497.67632      -   7.4   85s
+  2110  2010 1499.15291  247   18          - 1499.15291      -   8.0   90s
+  2131  2027 1522.91750  315   59          - 1501.46326      -   8.7   95s
+  2148  2039 1506.41496  255   20          - 1504.88234      -   9.2  100s
+  2166  2052 1505.27027   55   15          - 1505.27027      -   9.5  105s
+  2179  2062 1642.34109  621   35          - 1505.37424      -   9.8  110s
+  2197  2076 1596.79685  521   40          - 1505.61009      -  10.1  115s
+  2212  2087 1610.37719  511   16          - 1505.64566      -  10.5  120s
+  2217  2091 1596.79685  521   16          - 1505.69221      -  10.5  128s
+  2224  2095 1506.36445  265   10          - 1506.36445      -  10.8  130s
+  2306  2151 1509.01115  286   12          - 1506.73722      -  10.7  135s
+  2468  2236 1511.03068  331    -          - 1506.73722      -  10.4  140s
+
+Cutting planes:
+  Gomory: 10
+  MIR: 2
+  Flow cover: 11
+  Zero half: 45
+  Lazy constraints: 15
+
+Explored 2678 nodes (27345 simplex iterations) in 143.16 seconds
+Thread count was 4 (of 4 available processors)
+
+Solve interrupted
+Best objective -, best bound 1.506737219791e+03, gap -
+
+Gurobi 6.5.0 (mac64) logging started Tue Jan  5 20:57:55 2016
+
+Changed value of parameter TimeLimit to 100.0
+   Prev: 1e+100  Min: 0.0  Max: 1e+100  Default: 1e+100
+Changed value of parameter TimeLimit to 100.0
+   Prev: 1e+100  Min: 0.0  Max: 1e+100  Default: 1e+100
+Optimize a model with 130 rows, 200 columns and 410 nonzeros
+Coefficient statistics:
+  Matrix range    [1e+00, 1e+01]
+  Objective range [1e+01, 2e+02]
+  Bounds range    [1e+00, 1e+00]
+  RHS range       [1e+00, 1e+00]
+Found heuristic solution: objective 804.046
+Presolve removed 130 rows and 200 columns
+Presolve time: 0.01s
+Presolve: All rows and columns removed
+
+Explored 0 nodes (0 simplex iterations) in 0.02 seconds
+Thread count was 1 (of 4 available processors)
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 3.415612277251e+02, best bound 3.415612277251e+02, gap 0.0%
+Changed value of parameter TimeLimit to 100.0
+   Prev: 1e+100  Min: 0.0  Max: 1e+100  Default: 1e+100
+Optimize a model with 133 rows, 200 columns and 431 nonzeros
+Coefficient statistics:
+  Matrix range    [1e+00, 1e+01]
+  Objective range [1e+01, 2e+02]
+  Bounds range    [1e+00, 1e+00]
+  RHS range       [1e+00, 1e+00]
+Found heuristic solution: objective 877.2
+Presolve removed 133 rows and 200 columns
+Presolve time: 0.00s
+Presolve: All rows and columns removed
+
+Explored 0 nodes (0 simplex iterations) in 0.01 seconds
+Thread count was 1 (of 4 available processors)
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 3.415612277251e+02, best bound 3.415612277251e+02, gap 0.0%
+Changed value of parameter TimeLimit to 100.0
+   Prev: 1e+100  Min: 0.0  Max: 1e+100  Default: 1e+100
+Optimize a model with 129 rows, 200 columns and 390 nonzeros
+Coefficient statistics:
+  Matrix range    [1e+00, 1e+01]
+  Objective range [1e+01, 2e+02]
+  Bounds range    [1e+00, 1e+00]
+  RHS range       [1e+00, 1e+00]
+Found heuristic solution: objective 696.504
+Presolve removed 129 rows and 200 columns
+Presolve time: 0.00s
+Presolve: All rows and columns removed
+
+Explored 0 nodes (0 simplex iterations) in 0.01 seconds
+Thread count was 1 (of 4 available processors)
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 3.189086339806e+02, best bound 3.189086339806e+02, gap 0.0%
+Changed value of parameter TimeLimit to 100.0
+   Prev: 1e+100  Min: 0.0  Max: 1e+100  Default: 1e+100
+Optimize a model with 138 rows, 200 columns and 390 nonzeros
+Coefficient statistics:
+  Matrix range    [1e+00, 1e+01]
+  Objective range [1e+01, 2e+02]
+  Bounds range    [1e+00, 1e+00]
+  RHS range       [1e+00, 1e+00]
+Presolve removed 0 rows and 100 columns
+Presolve time: 0.00s
+
+Explored 0 nodes (0 simplex iterations) in 0.01 seconds
+Thread count was 1 (of 4 available processors)
+
+Model is infeasible
+Best objective -, best bound -, gap -
+Changed value of parameter TimeLimit to 100.0
+   Prev: 1e+100  Min: 0.0  Max: 1e+100  Default: 1e+100
+Optimize a model with 138 rows, 200 columns and 390 nonzeros
+Coefficient statistics:
+  Matrix range    [1e+00, 1e+01]
+  Objective range [1e+01, 2e+02]
+  Bounds range    [1e+00, 1e+00]
+  RHS range       [1e+00, 1e+00]
+Presolve removed 0 rows and 100 columns
+Presolve time: 0.00s
+
+Explored 0 nodes (0 simplex iterations) in 0.01 seconds
+Thread count was 1 (of 4 available processors)
+
+Model is infeasible
+Best objective -, best bound -, gap -
+Changed value of parameter TimeLimit to 100.0
+   Prev: 1e+100  Min: 0.0  Max: 1e+100  Default: 1e+100
+Optimize a model with 138 rows, 200 columns and 390 nonzeros
+Coefficient statistics:
+  Matrix range    [1e+00, 1e+01]
+  Objective range [1e+01, 2e+02]
+  Bounds range    [1e+00, 1e+00]
+  RHS range       [1e+00, 1e+00]
+Presolve removed 0 rows and 100 columns
+Presolve time: 0.00s
+
+Explored 0 nodes (0 simplex iterations) in 0.00 seconds
+Thread count was 1 (of 4 available processors)
+
+Model is infeasible
+Best objective -, best bound -, gap -
+Changed value of parameter TimeLimit to 100.0
+   Prev: 1e+100  Min: 0.0  Max: 1e+100  Default: 1e+100
+Optimize a model with 138 rows, 200 columns and 390 nonzeros
+Coefficient statistics:
+  Matrix range    [1e+00, 1e+01]
+  Objective range [1e+01, 2e+02]
+  Bounds range    [1e+00, 1e+00]
+  RHS range       [1e+00, 1e+00]
+Presolve removed 0 rows and 100 columns
+Presolve time: 0.00s
+
+Explored 0 nodes (0 simplex iterations) in 0.00 seconds
+Thread count was 1 (of 4 available processors)
+
+Model is infeasible
+Best objective -, best bound -, gap -
+Changed value of parameter TimeLimit to 100.0
+   Prev: 1e+100  Min: 0.0  Max: 1e+100  Default: 1e+100
+Optimize a model with 10398 rows, 20000 columns and 39900 nonzeros
+Coefficient statistics:
+  Matrix range    [1e+00, 1e+02]
+  Objective range [4e-01, 4e+02]
+  Bounds range    [1e+00, 1e+00]
+  RHS range       [1e+00, 1e+00]
+Presolve removed 0 rows and 10000 columns
+Presolve time: 0.01s
+
+Explored 0 nodes (0 simplex iterations) in 0.02 seconds
+Thread count was 1 (of 4 available processors)
+
+Model is infeasible
+Best objective -, best bound -, gap -
+Changed value of parameter TimeLimit to 100.0
+   Prev: 1e+100  Min: 0.0  Max: 1e+100  Default: 1e+100
+Optimize a model with 10398 rows, 20000 columns and 39900 nonzeros
+Coefficient statistics:
+  Matrix range    [1e+00, 1e+02]
+  Objective range [4e-01, 4e+02]
+  Bounds range    [1e+00, 1e+00]
+  RHS range       [1e+00, 1e+00]
+Presolve removed 0 rows and 10000 columns
+Presolve time: 0.01s
+
+Explored 0 nodes (0 simplex iterations) in 0.02 seconds
+Thread count was 1 (of 4 available processors)
+
+Model is infeasible
+Best objective -, best bound -, gap -
+Changed value of parameter TimeLimit to 100.0
+   Prev: 1e+100  Min: 0.0  Max: 1e+100  Default: 1e+100
+Optimize a model with 10399 rows, 20000 columns and 39900 nonzeros
+Coefficient statistics:
+  Matrix range    [1e+00, 1e+02]
+  Objective range [4e-01, 4e+02]
+  Bounds range    [1e+00, 1e+00]
+  RHS range       [1e+00, 1e+00]
+Presolve removed 0 rows and 10000 columns
+Presolve time: 0.00s
+
+Explored 0 nodes (0 simplex iterations) in 0.02 seconds
+Thread count was 1 (of 4 available processors)
+
+Model is infeasible
+Best objective -, best bound -, gap -
+Changed value of parameter TimeLimit to 100.0
+   Prev: 1e+100  Min: 0.0  Max: 1e+100  Default: 1e+100
+Optimize a model with 10299 rows, 20000 columns and 39900 nonzeros
+Coefficient statistics:
+  Matrix range    [1e+00, 1e+02]
+  Objective range [4e-01, 4e+02]
+  Bounds range    [1e+00, 1e+00]
+  RHS range       [1e+00, 1e+00]
+Found heuristic solution: objective 12169
+Presolve removed 10299 rows and 20000 columns
+Presolve time: 0.02s
+Presolve: All rows and columns removed
+
+Explored 0 nodes (0 simplex iterations) in 0.03 seconds
+Thread count was 1 (of 4 available processors)
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 9.886067924657e+02, best bound 9.886067924657e+02, gap 0.0%
+Changed value of parameter TimeLimit to 100.0
+   Prev: 1e+100  Min: 0.0  Max: 1e+100  Default: 1e+100
+Optimize a model with 10399 rows, 20000 columns and 39900 nonzeros
+Coefficient statistics:
+  Matrix range    [1e+00, 1e+02]
+  Objective range [4e-01, 4e+02]
+  Bounds range    [1e+00, 1e+00]
+  RHS range       [1e+00, 1e+00]
+Presolve removed 0 rows and 10000 columns
+Presolve time: 0.01s
+
+Explored 0 nodes (0 simplex iterations) in 0.02 seconds
+Thread count was 1 (of 4 available processors)
+
+Model is infeasible
+Best objective -, best bound -, gap -
+Changed value of parameter TimeLimit to 100.0
+   Prev: 1e+100  Min: 0.0  Max: 1e+100  Default: 1e+100
+Optimize a model with 10399 rows, 20000 columns and 39900 nonzeros
+Coefficient statistics:
+  Matrix range    [1e+00, 1e+02]
+  Objective range [4e-01, 4e+02]
+  Bounds range    [1e+00, 1e+00]
+  RHS range       [1e+00, 1e+00]
+Presolve removed 0 rows and 10000 columns
+Presolve time: 0.01s
+
+Explored 0 nodes (0 simplex iterations) in 0.02 seconds
+Thread count was 1 (of 4 available processors)
+
+Model is infeasible
+Best objective -, best bound -, gap -
+Changed value of parameter TimeLimit to 100.0
+   Prev: 1e+100  Min: 0.0  Max: 1e+100  Default: 1e+100
+Optimize a model with 10399 rows, 20000 columns and 39900 nonzeros
+Coefficient statistics:
+  Matrix range    [1e+00, 1e+02]
+  Objective range [4e-01, 4e+02]
+  Bounds range    [1e+00, 1e+00]
+  RHS range       [1e+00, 1e+00]
+Presolve removed 0 rows and 10000 columns
+Presolve time: 0.00s
+
+Explored 0 nodes (0 simplex iterations) in 0.02 seconds
+Thread count was 1 (of 4 available processors)
+
+Model is infeasible
+Best objective -, best bound -, gap -
+Changed value of parameter TimeLimit to 100.0
+   Prev: 1e+100  Min: 0.0  Max: 1e+100  Default: 1e+100
+Optimize a model with 10399 rows, 20000 columns and 39900 nonzeros
+Coefficient statistics:
+  Matrix range    [1e+00, 1e+02]
+  Objective range [4e-01, 4e+02]
+  Bounds range    [1e+00, 1e+00]
+  RHS range       [1e+00, 1e+00]
+Found heuristic solution: objective 12169
+Presolve removed 10399 rows and 20000 columns
+Presolve time: 0.02s
+Presolve: All rows and columns removed
+
+Explored 0 nodes (0 simplex iterations) in 0.03 seconds
+Thread count was 1 (of 4 available processors)
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 9.886067924657e+02, best bound 9.886067924657e+02, gap 0.0%
+Changed value of parameter TimeLimit to 100.0
+   Prev: 1e+100  Min: 0.0  Max: 1e+100  Default: 1e+100
+Optimize a model with 20399 rows, 20000 columns and 49900 nonzeros
+Coefficient statistics:
+  Matrix range    [1e+00, 1e+02]
+  Objective range [4e-01, 4e+02]
+  Bounds range    [1e+00, 1e+00]
+  RHS range       [1e+00, 1e+00]
+Found heuristic solution: objective 12169
+Presolve removed 20399 rows and 20000 columns
+Presolve time: 0.02s
+Presolve: All rows and columns removed
+
+Explored 0 nodes (0 simplex iterations) in 0.03 seconds
+Thread count was 1 (of 4 available processors)
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 9.886067924657e+02, best bound 9.886067924657e+02, gap 0.0%
+Changed value of parameter TimeLimit to 100.0
+   Prev: 1e+100  Min: 0.0  Max: 1e+100  Default: 1e+100
+Optimize a model with 300 rows, 20000 columns and 19902 nonzeros
+Coefficient statistics:
+  Matrix range    [1e+00, 1e+02]
+  Objective range [0e+00, 0e+00]
+  Bounds range    [1e+00, 1e+00]
+  RHS range       [1e+00, 1e+00]
+Found heuristic solution: objective 0
+Presolve removed 300 rows and 20000 columns
+Presolve time: 0.01s
+Presolve: All rows and columns removed
+
+Explored 0 nodes (0 simplex iterations) in 0.02 seconds
+Thread count was 1 (of 4 available processors)
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 0.000000000000e+00, best bound 0.000000000000e+00, gap 0.0%
+Changed value of parameter TimeLimit to 100.0
+   Prev: 1e+100  Min: 0.0  Max: 1e+100  Default: 1e+100
+Optimize a model with 20299 rows, 20000 columns and 49900 nonzeros
+Coefficient statistics:
+  Matrix range    [1e+00, 1e+02]
+  Objective range [4e-01, 4e+02]
+  Bounds range    [1e+00, 1e+00]
+  RHS range       [1e+00, 1e+00]
+Presolve removed 1 rows and 0 columns
+Presolve time: 0.00s
+
+Explored 0 nodes (0 simplex iterations) in 0.07 seconds
+Thread count was 1 (of 4 available processors)
+
+Model is infeasible
+Best objective -, best bound -, gap -
+Changed value of parameter TimeLimit to 100.0
+   Prev: 1e+100  Min: 0.0  Max: 1e+100  Default: 1e+100
+Optimize a model with 20299 rows, 20000 columns and 49900 nonzeros
+Coefficient statistics:
+  Matrix range    [1e+00, 1e+02]
+  Objective range [4e-01, 4e+02]
+  Bounds range    [1e+00, 1e+00]
+  RHS range       [1e+00, 1e+00]
+Found heuristic solution: objective 12169
+Presolve removed 20299 rows and 20000 columns
+Presolve time: 0.02s
+Presolve: All rows and columns removed
+
+Explored 0 nodes (0 simplex iterations) in 0.03 seconds
+Thread count was 1 (of 4 available processors)
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 9.886067924657e+02, best bound 9.886067924657e+02, gap 0.0%
+Optimize a model with 20299 rows, 20000 columns and 49900 nonzeros
+Coefficient statistics:
+  Matrix range    [1e+00, 1e+02]
+  Objective range [4e-01, 4e+02]
+  Bounds range    [1e+00, 1e+00]
+  RHS range       [1e+00, 1e+00]
+Presolve removed 20299 rows and 20000 columns
+Presolve time: 0.02s
+Presolve: All rows and columns removed
+
+Explored 0 nodes (0 simplex iterations) in 0.02 seconds
+Thread count was 1 (of 4 available processors)
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 9.886067924657e+02, best bound 9.886067924657e+02, gap 0.0%
+Optimize a model with 20299 rows, 20000 columns and 49900 nonzeros
+Coefficient statistics:
+  Matrix range    [1e+00, 1e+02]
+  Objective range [4e-01, 4e+02]
+  Bounds range    [1e+00, 1e+00]
+  RHS range       [1e+00, 1e+00]
+Presolve removed 20299 rows and 20000 columns
+Presolve time: 0.02s
+Presolve: All rows and columns removed
+
+Explored 0 nodes (0 simplex iterations) in 0.02 seconds
+Thread count was 1 (of 4 available processors)
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 9.886067924657e+02, best bound 9.886067924657e+02, gap 0.0%
+Optimize a model with 20299 rows, 20000 columns and 49900 nonzeros
+Coefficient statistics:
+  Matrix range    [1e+00, 1e+02]
+  Objective range [0e+00, 0e+00]
+  Bounds range    [1e+00, 1e+00]
+  RHS range       [1e+00, 1e+00]
+Found heuristic solution: objective 0
+Presolve removed 20299 rows and 20000 columns
+Presolve time: 0.02s
+Presolve: All rows and columns removed
+
+Explored 0 nodes (0 simplex iterations) in 0.02 seconds
+Thread count was 1 (of 4 available processors)
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 0.000000000000e+00, best bound 0.000000000000e+00, gap 0.0%
+IIS runtime: 0.03 seconds
+Changed value of parameter TimeLimit to 100.0
+   Prev: 1e+100  Min: 0.0  Max: 1e+100  Default: 1e+100
+Optimize a model with 20399 rows, 20000 columns and 49900 nonzeros
+Coefficient statistics:
+  Matrix range    [1e+00, 1e+02]
+  Objective range [4e-01, 4e+02]
+  Bounds range    [1e+00, 1e+00]
+  RHS range       [1e+00, 1e+00]
+Found heuristic solution: objective 12169
+Presolve removed 20399 rows and 20000 columns
+Presolve time: 0.02s
+Presolve: All rows and columns removed
+
+Explored 0 nodes (0 simplex iterations) in 0.03 seconds
+Thread count was 1 (of 4 available processors)
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 9.886067924657e+02, best bound 9.886067924657e+02, gap 0.0%
+Optimize a model with 20399 rows, 20000 columns and 49900 nonzeros
+Coefficient statistics:
+  Matrix range    [1e+00, 1e+02]
+  Objective range [0e+00, 0e+00]
+  Bounds range    [1e+00, 1e+00]
+  RHS range       [1e+00, 1e+00]
+Found heuristic solution: objective 0
+Presolve removed 20399 rows and 20000 columns
+Presolve time: 0.02s
+Presolve: All rows and columns removed
+
+Explored 0 nodes (0 simplex iterations) in 0.02 seconds
+Thread count was 1 (of 4 available processors)
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 0.000000000000e+00, best bound 0.000000000000e+00, gap 0.0%
+IIS runtime: 0.02 seconds
+Changed value of parameter TimeLimit to 100.0
+   Prev: 1e+100  Min: 0.0  Max: 1e+100  Default: 1e+100
+Optimize a model with 20399 rows, 20000 columns and 49900 nonzeros
+Coefficient statistics:
+  Matrix range    [1e+00, 1e+02]
+  Objective range [4e-01, 4e+02]
+  Bounds range    [1e+00, 1e+00]
+  RHS range       [1e+00, 1e+00]
+Found heuristic solution: objective 12169
+Presolve removed 20399 rows and 20000 columns
+Presolve time: 0.02s
+Presolve: All rows and columns removed
+
+Explored 0 nodes (0 simplex iterations) in 0.04 seconds
+Thread count was 1 (of 4 available processors)
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 9.886067924657e+02, best bound 9.886067924657e+02, gap 0.0%
+Changed value of parameter TimeLimit to 100.0
+   Prev: 1e+100  Min: 0.0  Max: 1e+100  Default: 1e+100
+Optimize a model with 20399 rows, 20000 columns and 49900 nonzeros
+Coefficient statistics:
+  Matrix range    [1e+00, 1e+02]
+  Objective range [4e-01, 4e+02]
+  Bounds range    [1e+00, 1e+00]
+  RHS range       [1e+00, 1e+00]
+Presolve time: 0.00s
+
+Explored 0 nodes (0 simplex iterations) in 0.03 seconds
+Thread count was 1 (of 4 available processors)
+
+Model is infeasible
+Best objective -, best bound -, gap -
+Changed value of parameter TimeLimit to 100.0
+   Prev: 1e+100  Min: 0.0  Max: 1e+100  Default: 1e+100
+Optimize a model with 20399 rows, 20000 columns and 49900 nonzeros
+Coefficient statistics:
+  Matrix range    [1e+00, 1e+02]
+  Objective range [4e-01, 4e+02]
+  Bounds range    [1e+00, 1e+00]
+  RHS range       [1e+00, 1e+00]
+Presolve time: 0.01s
+
+Explored 0 nodes (0 simplex iterations) in 0.03 seconds
+Thread count was 1 (of 4 available processors)
+
+Model is infeasible
+Best objective -, best bound -, gap -
+
+Computing Irreducible Inconsistent Subsystem (IIS)...
+
+      Constraints           Bounds       Runtime
+     Min       Max       Min      Max
+------------------------------------------------
+        0    20399         0    30000         0s
+
+IIS computed: 1 constraints, 0 bounds
+IIS runtime: 0.02 seconds
+Changed value of parameter TimeLimit to 100.0
+   Prev: 1e+100  Min: 0.0  Max: 1e+100  Default: 1e+100
+Optimize a model with 20399 rows, 20000 columns and 49900 nonzeros
+Coefficient statistics:
+  Matrix range    [1e+00, 1e+02]
+  Objective range [4e-01, 4e+02]
+  Bounds range    [1e+00, 1e+00]
+  RHS range       [1e+00, 1e+00]
+Presolve time: 0.01s
+
+Explored 0 nodes (0 simplex iterations) in 0.03 seconds
+Thread count was 1 (of 4 available processors)
+
+Model is infeasible
+Best objective -, best bound -, gap -
+
+Computing Irreducible Inconsistent Subsystem (IIS)...
+
+      Constraints           Bounds       Runtime
+     Min       Max       Min      Max
+------------------------------------------------
+        0    20399         0    30000         0s
+
+IIS computed: 1 constraints, 0 bounds
+IIS runtime: 0.02 seconds
+
+IIS computed: 1 constraints, 0 bounds
+IIS runtime: 0.00 seconds
+Changed value of parameter TimeLimit to 100.0
+   Prev: 1e+100  Min: 0.0  Max: 1e+100  Default: 1e+100
+Optimize a model with 20399 rows, 20000 columns and 49900 nonzeros
+Coefficient statistics:
+  Matrix range    [1e+00, 1e+02]
+  Objective range [4e-01, 4e+02]
+  Bounds range    [1e+00, 1e+00]
+  RHS range       [1e+00, 1e+00]
+Presolve time: 0.01s
+
+Explored 0 nodes (0 simplex iterations) in 0.03 seconds
+Thread count was 1 (of 4 available processors)
+
+Model is infeasible
+Best objective -, best bound -, gap -
+
+Computing Irreducible Inconsistent Subsystem (IIS)...
+
+      Constraints           Bounds       Runtime
+     Min       Max       Min      Max
+------------------------------------------------
+        0    20399         0    30000         0s
+
+IIS computed: 1 constraints, 0 bounds
+IIS runtime: 0.02 seconds
+Changed value of parameter TimeLimit to 100.0
+   Prev: 1e+100  Min: 0.0  Max: 1e+100  Default: 1e+100
+Optimize a model with 20399 rows, 20000 columns and 49900 nonzeros
+Coefficient statistics:
+  Matrix range    [1e+00, 1e+02]
+  Objective range [4e-01, 4e+02]
+  Bounds range    [1e+00, 1e+00]
+  RHS range       [1e+00, 1e+00]
+Presolve time: 0.01s
+
+Explored 0 nodes (0 simplex iterations) in 0.03 seconds
+Thread count was 1 (of 4 available processors)
+
+Model is infeasible
+Best objective -, best bound -, gap -
+Changed value of parameter TimeLimit to 100.0
+   Prev: 1e+100  Min: 0.0  Max: 1e+100  Default: 1e+100
+Optimize a model with 20299 rows, 20000 columns and 49900 nonzeros
+Coefficient statistics:
+  Matrix range    [1e+00, 1e+02]
+  Objective range [4e-01, 4e+02]
+  Bounds range    [1e+00, 1e+00]
+  RHS range       [1e+00, 1e+00]
+Found heuristic solution: objective 12169
+Presolve removed 20299 rows and 20000 columns
+Presolve time: 0.02s
+Presolve: All rows and columns removed
+
+Explored 0 nodes (0 simplex iterations) in 0.03 seconds
+Thread count was 1 (of 4 available processors)
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 9.886067924657e+02, best bound 9.886067924657e+02, gap 0.0%
+Optimize a model with 20299 rows, 20000 columns and 49900 nonzeros
+Coefficient statistics:
+  Matrix range    [1e+00, 1e+02]
+  Objective range [0e+00, 0e+00]
+  Bounds range    [1e+00, 1e+00]
+  RHS range       [1e+00, 1e+00]
+Found heuristic solution: objective 0
+Presolve removed 20299 rows and 20000 columns
+Presolve time: 0.02s
+Presolve: All rows and columns removed
+
+Explored 0 nodes (0 simplex iterations) in 0.03 seconds
+Thread count was 1 (of 4 available processors)
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 0.000000000000e+00, best bound 0.000000000000e+00, gap 0.0%
+IIS runtime: 0.03 seconds
+Changed value of parameter TimeLimit to 100.0
+   Prev: 1e+100  Min: 0.0  Max: 1e+100  Default: 1e+100
+Optimize a model with 20299 rows, 20000 columns and 49900 nonzeros
+Coefficient statistics:
+  Matrix range    [1e+00, 1e+02]
+  Objective range [4e-01, 4e+02]
+  Bounds range    [1e+00, 1e+00]
+  RHS range       [1e+00, 1e+00]
+Found heuristic solution: objective 12169
+Presolve removed 20299 rows and 20000 columns
+Presolve time: 0.02s
+Presolve: All rows and columns removed
+
+Explored 0 nodes (0 simplex iterations) in 0.03 seconds
+Thread count was 1 (of 4 available processors)
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 9.886067924657e+02, best bound 9.886067924657e+02, gap 0.0%
+Changed value of parameter TimeLimit to 100.0
+   Prev: 1e+100  Min: 0.0  Max: 1e+100  Default: 1e+100
+Optimize a model with 20399 rows, 20000 columns and 49900 nonzeros
+Coefficient statistics:
+  Matrix range    [1e+00, 1e+02]
+  Objective range [4e-01, 4e+02]
+  Bounds range    [1e+00, 1e+00]
+  RHS range       [1e+00, 1e+00]
+Presolve time: 0.00s
+
+Explored 0 nodes (0 simplex iterations) in 0.03 seconds
+Thread count was 1 (of 4 available processors)
+
+Model is infeasible
+Best objective -, best bound -, gap -
+Optimize a model with 20399 rows, 20000 columns and 49900 nonzeros
+Coefficient statistics:
+  Matrix range    [1e+00, 1e+02]
+  Objective range [4e-01, 4e+02]
+  Bounds range    [1e+00, 1e+00]
+  RHS range       [1e+00, 1e+00]
+Presolve time: 0.01s
+
+Explored 0 nodes (0 simplex iterations) in 0.03 seconds
+Thread count was 1 (of 4 available processors)
+
+Model is infeasible
+Best objective -, best bound -, gap -
+Optimize a model with 20399 rows, 20000 columns and 49900 nonzeros
+Coefficient statistics:
+  Matrix range    [1e+00, 1e+02]
+  Objective range [4e-01, 4e+02]
+  Bounds range    [1e+00, 1e+00]
+  RHS range       [1e-01, 1e+00]
+Presolve time: 0.00s
+
+Explored 0 nodes (0 simplex iterations) in 0.03 seconds
+Thread count was 1 (of 4 available processors)
+
+Model is infeasible
+Best objective -, best bound -, gap -
+Optimize a model with 20399 rows, 20000 columns and 49900 nonzeros
+Coefficient statistics:
+  Matrix range    [1e+00, 1e+02]
+  Objective range [4e-01, 4e+02]
+  Bounds range    [1e+00, 1e+00]
+  RHS range       [1e+00, 1e+00]
+Found heuristic solution: objective 12169
+Presolve removed 20399 rows and 20000 columns
+Presolve time: 0.02s
+Presolve: All rows and columns removed
+
+Explored 0 nodes (0 simplex iterations) in 0.03 seconds
+Thread count was 1 (of 4 available processors)
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 9.886067924657e+02, best bound 9.886067924657e+02, gap 0.0%
+Optimize a model with 399 rows, 20000 columns and 19900 nonzeros
+Coefficient statistics:
+  Matrix range    [1e+00, 1e+00]
+  Objective range [4e-01, 4e+02]
+  Bounds range    [1e+00, 1e+00]
+  RHS range       [1e+00, 1e+00]
+Found heuristic solution: objective 12169
+Presolve removed 399 rows and 20000 columns
+Presolve time: 0.02s
+Presolve: All rows and columns removed
+
+Explored 0 nodes (0 simplex iterations) in 0.03 seconds
+Thread count was 1 (of 4 available processors)
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 9.886067924657e+02, best bound 9.886067924657e+02, gap 0.0%
+Optimize a model with 399 rows, 20000 columns and 19900 nonzeros
+Coefficient statistics:
+  Matrix range    [1e+00, 1e+00]
+  Objective range [4e-01, 4e+02]
+  Bounds range    [1e+00, 1e+00]
+  RHS range       [1e+00, 1e+00]
+Presolve removed 1 rows and 10100 columns
+Presolve time: 0.00s
+
+Explored 0 nodes (0 simplex iterations) in 0.01 seconds
+Thread count was 1 (of 4 available processors)
+
+Model is infeasible
+Best objective -, best bound -, gap -
+Optimize a model with 498 rows, 20000 columns and 19999 nonzeros
+Coefficient statistics:
+  Matrix range    [1e+00, 1e+00]
+  Objective range [4e-01, 4e+02]
+  Bounds range    [1e+00, 1e+00]
+  RHS range       [1e+00, 1e+00]
+Presolve removed 100 rows and 10100 columns
+Presolve time: 0.00s
+
+Explored 0 nodes (0 simplex iterations) in 0.01 seconds
+Thread count was 1 (of 4 available processors)
+
+Model is infeasible
+Best objective -, best bound -, gap -
+Optimize a model with 10399 rows, 20000 columns and 39900 nonzeros
+Coefficient statistics:
+  Matrix range    [1e+00, 1e+02]
+  Objective range [4e-01, 4e+02]
+  Bounds range    [1e+00, 1e+00]
+  RHS range       [1e+00, 1e+00]
+Presolve removed 0 rows and 10000 columns
+Presolve time: 0.00s
+
+Explored 0 nodes (0 simplex iterations) in 0.02 seconds
+Thread count was 1 (of 4 available processors)
+
+Model is infeasible
+Best objective -, best bound -, gap -
+Optimize a model with 10299 rows, 20000 columns and 39900 nonzeros
+Coefficient statistics:
+  Matrix range    [1e+00, 1e+02]
+  Objective range [4e-01, 4e+02]
+  Bounds range    [1e+00, 1e+00]
+  RHS range       [1e+00, 1e+00]
+Found heuristic solution: objective 12169
+Presolve removed 10299 rows and 20000 columns
+Presolve time: 0.02s
+Presolve: All rows and columns removed
+
+Explored 0 nodes (0 simplex iterations) in 0.05 seconds
+Thread count was 1 (of 4 available processors)
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 9.886067924657e+02, best bound 9.886067924657e+02, gap 0.0%
+Optimize a model with 10299 rows, 20000 columns and 39900 nonzeros
+Coefficient statistics:
+  Matrix range    [1e+00, 1e+02]
+  Objective range [4e-01, 4e+02]
+  Bounds range    [1e+00, 1e+00]
+  RHS range       [1e+00, 1e+00]
+Found heuristic solution: objective 12169
+Presolve removed 10299 rows and 20000 columns
+Presolve time: 0.02s
+Presolve: All rows and columns removed
+
+Explored 0 nodes (0 simplex iterations) in 0.03 seconds
+Thread count was 1 (of 4 available processors)
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 9.886067924657e+02, best bound 9.886067924657e+02, gap 0.0%
+Optimize a model with 10399 rows, 20000 columns and 39900 nonzeros
+Coefficient statistics:
+  Matrix range    [1e+00, 1e+02]
+  Objective range [4e-01, 4e+02]
+  Bounds range    [1e+00, 1e+00]
+  RHS range       [1e+00, 1e+00]
+Presolve removed 0 rows and 10000 columns
+Presolve time: 0.00s
+
+Explored 0 nodes (0 simplex iterations) in 0.02 seconds
+Thread count was 1 (of 4 available processors)
+
+Model is infeasible
+Best objective -, best bound -, gap -
+
+Computing Irreducible Inconsistent Subsystem (IIS)...
+
+      Constraints           Bounds       Runtime
+     Min       Max       Min      Max
+------------------------------------------------
+        0    10399         0    30000         0s
+
+IIS computed: 1 constraints, 0 bounds
+IIS runtime: 0.01 seconds
+Optimize a model with 10400 rows, 20000 columns and 40100 nonzeros
+Coefficient statistics:
+  Matrix range    [1e+00, 1e+02]
+  Objective range [4e-01, 4e+02]
+  Bounds range    [1e+00, 1e+00]
+  RHS range       [1e+00, 1e+00]
+Presolve removed 0 rows and 10000 columns
+Presolve time: 0.00s
+
+Explored 0 nodes (0 simplex iterations) in 0.02 seconds
+Thread count was 1 (of 4 available processors)
+
+Model is infeasible
+Best objective -, best bound -, gap -
+
+Computing Irreducible Inconsistent Subsystem (IIS)...
+
+      Constraints           Bounds       Runtime
+     Min       Max       Min      Max
+------------------------------------------------
+        0    10400         0    30000         0s
+
+IIS computed: 1 constraints, 0 bounds
+IIS runtime: 0.01 seconds
+Optimize a model with 10400 rows, 20000 columns and 40100 nonzeros
+Coefficient statistics:
+  Matrix range    [1e+00, 1e+02]
+  Objective range [4e-01, 4e+02]
+  Bounds range    [1e+00, 1e+00]
+  RHS range       [1e+00, 1e+00]
+Presolve removed 0 rows and 10000 columns
+Presolve time: 0.01s
+
+Explored 0 nodes (0 simplex iterations) in 0.02 seconds
+Thread count was 1 (of 4 available processors)
+
+Model is infeasible
+Best objective -, best bound -, gap -
+
+Computing Irreducible Inconsistent Subsystem (IIS)...
+
+      Constraints           Bounds       Runtime
+     Min       Max       Min      Max
+------------------------------------------------
+        0    10400         0    30000         0s
+
+IIS computed: 1 constraints, 0 bounds
+IIS runtime: 0.02 seconds
+Optimize a model with 10400 rows, 20000 columns and 40100 nonzeros
+Coefficient statistics:
+  Matrix range    [1e+00, 1e+02]
+  Objective range [4e-01, 4e+02]
+  Bounds range    [1e+00, 1e+00]
+  RHS range       [1e+00, 1e+00]
+Presolve removed 0 rows and 10000 columns
+Presolve time: 0.00s
+
+Explored 0 nodes (0 simplex iterations) in 0.02 seconds
+Thread count was 1 (of 4 available processors)
+
+Model is infeasible
+Best objective -, best bound -, gap -
+
+Computing Irreducible Inconsistent Subsystem (IIS)...
+
+      Constraints           Bounds       Runtime
+     Min       Max       Min      Max
+------------------------------------------------
+        0    10400         0    30000         0s
+
+IIS computed: 1 constraints, 0 bounds
+IIS runtime: 0.01 seconds
+Optimize a model with 10399 rows, 20000 columns and 40100 nonzeros
+Coefficient statistics:
+  Matrix range    [1e+00, 1e+02]
+  Objective range [4e-01, 4e+02]
+  Bounds range    [1e+00, 1e+00]
+  RHS range       [1e+00, 1e+00]
+Presolve removed 0 rows and 10000 columns
+Presolve time: 0.00s
+
+Explored 0 nodes (0 simplex iterations) in 0.02 seconds
+Thread count was 1 (of 4 available processors)
+
+Model is infeasible
+Best objective -, best bound -, gap -
+
+Computing Irreducible Inconsistent Subsystem (IIS)...
+
+      Constraints           Bounds       Runtime
+     Min       Max       Min      Max
+------------------------------------------------
+        0    10399         0    30000         0s
+
+IIS computed: 1 constraints, 0 bounds
+IIS runtime: 0.01 seconds
+Optimize a model with 10399 rows, 20000 columns and 40100 nonzeros
+Coefficient statistics:
+  Matrix range    [1e+00, 1e+02]
+  Objective range [4e-01, 4e+02]
+  Bounds range    [1e+00, 1e+00]
+  RHS range       [1e+00, 1e+00]
+Presolve removed 0 rows and 10000 columns
+Presolve time: 0.00s
+
+Explored 0 nodes (0 simplex iterations) in 0.02 seconds
+Thread count was 1 (of 4 available processors)
+
+Model is infeasible
+Best objective -, best bound -, gap -
+
+IIS computed: 1 constraints, 0 bounds
+IIS runtime: 0.00 seconds
+Optimize a model with 10398 rows, 20000 columns and 40100 nonzeros
+Coefficient statistics:
+  Matrix range    [1e+00, 1e+02]
+  Objective range [4e-01, 4e+02]
+  Bounds range    [1e+00, 1e+00]
+  RHS range       [1e+00, 1e+00]
+Presolve removed 0 rows and 10000 columns
+Presolve time: 0.00s
+
+Explored 0 nodes (0 simplex iterations) in 0.02 seconds
+Thread count was 1 (of 4 available processors)
+
+Model is infeasible
+Best objective -, best bound -, gap -
+
+Computing Irreducible Inconsistent Subsystem (IIS)...
+
+      Constraints           Bounds       Runtime
+     Min       Max       Min      Max
+------------------------------------------------
+        0    10398         0    30000         0s
+
+IIS computed: 1 constraints, 0 bounds
+IIS runtime: 0.01 seconds
+Optimize a model with 10397 rows, 20000 columns and 40100 nonzeros
+Coefficient statistics:
+  Matrix range    [1e+00, 1e+02]
+  Objective range [4e-01, 4e+02]
+  Bounds range    [1e+00, 1e+00]
+  RHS range       [1e+00, 1e+00]
+Presolve removed 0 rows and 10000 columns
+Presolve time: 0.00s
+
+Explored 0 nodes (0 simplex iterations) in 0.02 seconds
+Thread count was 1 (of 4 available processors)
+
+Model is infeasible
+Best objective -, best bound -, gap -
+
+Computing Irreducible Inconsistent Subsystem (IIS)...
+
+      Constraints           Bounds       Runtime
+     Min       Max       Min      Max
+------------------------------------------------
+        0    10397         0    30000         0s
+
+IIS computed: 1 constraints, 0 bounds
+IIS runtime: 0.01 seconds
+Optimize a model with 10396 rows, 20000 columns and 40100 nonzeros
+Coefficient statistics:
+  Matrix range    [1e+00, 1e+02]
+  Objective range [4e-01, 4e+02]
+  Bounds range    [1e+00, 1e+00]
+  RHS range       [1e+00, 1e+00]
+Presolve removed 0 rows and 10000 columns
+Presolve time: 0.00s
+
+Explored 0 nodes (0 simplex iterations) in 0.02 seconds
+Thread count was 1 (of 4 available processors)
+
+Model is infeasible
+Best objective -, best bound -, gap -
+
+Computing Irreducible Inconsistent Subsystem (IIS)...
+
+      Constraints           Bounds       Runtime
+     Min       Max       Min      Max
+------------------------------------------------
+        0    10396         0    30000         0s
+
+IIS computed: 1 constraints, 0 bounds
+IIS runtime: 0.02 seconds
+Optimize a model with 10395 rows, 20000 columns and 40100 nonzeros
+Coefficient statistics:
+  Matrix range    [1e+00, 1e+02]
+  Objective range [4e-01, 4e+02]
+  Bounds range    [1e+00, 1e+00]
+  RHS range       [1e+00, 1e+00]
+Presolve removed 0 rows and 10000 columns
+Presolve time: 0.00s
+
+Explored 0 nodes (0 simplex iterations) in 0.02 seconds
+Thread count was 1 (of 4 available processors)
+
+Model is infeasible
+Best objective -, best bound -, gap -
+
+Computing Irreducible Inconsistent Subsystem (IIS)...
+
+      Constraints           Bounds       Runtime
+     Min       Max       Min      Max
+------------------------------------------------
+        0    10395         0    30000         0s
+
+IIS computed: 1 constraints, 0 bounds
+IIS runtime: 0.01 seconds
+Optimize a model with 10395 rows, 20000 columns and 40100 nonzeros
+Coefficient statistics:
+  Matrix range    [1e+00, 1e+02]
+  Objective range [4e-01, 4e+02]
+  Bounds range    [1e+00, 1e+00]
+  RHS range       [1e+00, 1e+00]
+Presolve removed 0 rows and 10000 columns
+Presolve time: 0.00s
+
+Explored 0 nodes (0 simplex iterations) in 0.02 seconds
+Thread count was 1 (of 4 available processors)
+
+Model is infeasible
+Best objective -, best bound -, gap -
+
+IIS computed: 1 constraints, 0 bounds
+IIS runtime: 0.00 seconds
+Optimize a model with 10395 rows, 20000 columns and 40100 nonzeros
+Coefficient statistics:
+  Matrix range    [1e+00, 1e+02]
+  Objective range [4e-01, 4e+02]
+  Bounds range    [1e+00, 1e+00]
+  RHS range       [1e+00, 1e+00]
+Presolve removed 0 rows and 10000 columns
+Presolve time: 0.00s
+
+Explored 0 nodes (0 simplex iterations) in 0.02 seconds
+Thread count was 1 (of 4 available processors)
+
+Model is infeasible
+Best objective -, best bound -, gap -
+
+IIS computed: 1 constraints, 0 bounds
+IIS runtime: 0.00 seconds
+Optimize a model with 10395 rows, 20000 columns and 40100 nonzeros
+Coefficient statistics:
+  Matrix range    [1e+00, 1e+02]
+  Objective range [4e-01, 4e+02]
+  Bounds range    [1e+00, 1e+00]
+  RHS range       [1e+00, 1e+00]
+Presolve removed 0 rows and 10000 columns
+Presolve time: 0.00s
+
+Explored 0 nodes (0 simplex iterations) in 0.02 seconds
+Thread count was 1 (of 4 available processors)
+
+Model is infeasible
+Best objective -, best bound -, gap -
+
+IIS computed: 1 constraints, 0 bounds
+IIS runtime: 0.00 seconds
+Optimize a model with 10395 rows, 20000 columns and 40100 nonzeros
+Coefficient statistics:
+  Matrix range    [1e+00, 1e+02]
+  Objective range [4e-01, 4e+02]
+  Bounds range    [1e+00, 1e+00]
+  RHS range       [1e+00, 1e+00]
+Presolve removed 0 rows and 10000 columns
+Presolve time: 0.00s
+
+Explored 0 nodes (0 simplex iterations) in 0.02 seconds
+Thread count was 1 (of 4 available processors)
+
+Model is infeasible
+Best objective -, best bound -, gap -
+
+IIS computed: 1 constraints, 0 bounds
+IIS runtime: 0.00 seconds
+Optimize a model with 10394 rows, 20000 columns and 40100 nonzeros
+Coefficient statistics:
+  Matrix range    [1e+00, 1e+02]
+  Objective range [4e-01, 4e+02]
+  Bounds range    [1e+00, 1e+00]
+  RHS range       [1e+00, 1e+00]
+Presolve removed 0 rows and 10000 columns
+Presolve time: 0.00s
+
+Explored 0 nodes (0 simplex iterations) in 0.02 seconds
+Thread count was 1 (of 4 available processors)
+
+Model is infeasible
+Best objective -, best bound -, gap -
+
+Computing Irreducible Inconsistent Subsystem (IIS)...
+
+      Constraints           Bounds       Runtime
+     Min       Max       Min      Max
+------------------------------------------------
+        0    10394         0    30000         0s
+
+IIS computed: 1 constraints, 0 bounds
+IIS runtime: 0.02 seconds
+Optimize a model with 10393 rows, 20000 columns and 40100 nonzeros
+Coefficient statistics:
+  Matrix range    [1e+00, 1e+02]
+  Objective range [4e-01, 4e+02]
+  Bounds range    [1e+00, 1e+00]
+  RHS range       [1e+00, 1e+00]
+Presolve removed 0 rows and 10000 columns
+Presolve time: 0.00s
+
+Explored 0 nodes (0 simplex iterations) in 0.02 seconds
+Thread count was 1 (of 4 available processors)
+
+Model is infeasible
+Best objective -, best bound -, gap -
+
+Computing Irreducible Inconsistent Subsystem (IIS)...
+
+      Constraints           Bounds       Runtime
+     Min       Max       Min      Max
+------------------------------------------------
+        0    10393         0    30000         0s
+
+IIS computed: 1 constraints, 0 bounds
+IIS runtime: 0.01 seconds
+Optimize a model with 10392 rows, 20000 columns and 40100 nonzeros
+Coefficient statistics:
+  Matrix range    [1e+00, 1e+02]
+  Objective range [4e-01, 4e+02]
+  Bounds range    [1e+00, 1e+00]
+  RHS range       [1e+00, 1e+00]
+Presolve removed 0 rows and 10000 columns
+Presolve time: 0.00s
+
+Explored 0 nodes (0 simplex iterations) in 0.02 seconds
+Thread count was 1 (of 4 available processors)
+
+Model is infeasible
+Best objective -, best bound -, gap -
+
+Computing Irreducible Inconsistent Subsystem (IIS)...
+
+      Constraints           Bounds       Runtime
+     Min       Max       Min      Max
+------------------------------------------------
+        0    10392         0    30000         0s
+
+IIS computed: 1 constraints, 0 bounds
+IIS runtime: 0.02 seconds
+Optimize a model with 10391 rows, 20000 columns and 40100 nonzeros
+Coefficient statistics:
+  Matrix range    [1e+00, 1e+02]
+  Objective range [4e-01, 4e+02]
+  Bounds range    [1e+00, 1e+00]
+  RHS range       [1e+00, 1e+00]
+Presolve removed 0 rows and 10000 columns
+Presolve time: 0.00s
+
+Explored 0 nodes (0 simplex iterations) in 0.02 seconds
+Thread count was 1 (of 4 available processors)
+
+Model is infeasible
+Best objective -, best bound -, gap -
+
+Computing Irreducible Inconsistent Subsystem (IIS)...
+
+      Constraints           Bounds       Runtime
+     Min       Max       Min      Max
+------------------------------------------------
+        0    10391         0    30000         0s
+
+IIS computed: 1 constraints, 0 bounds
+IIS runtime: 0.01 seconds
+Optimize a model with 10390 rows, 20000 columns and 40100 nonzeros
+Coefficient statistics:
+  Matrix range    [1e+00, 1e+02]
+  Objective range [4e-01, 4e+02]
+  Bounds range    [1e+00, 1e+00]
+  RHS range       [1e+00, 1e+00]
+Presolve removed 0 rows and 10000 columns
+Presolve time: 0.00s
+
+Explored 0 nodes (0 simplex iterations) in 0.02 seconds
+Thread count was 1 (of 4 available processors)
+
+Model is infeasible
+Best objective -, best bound -, gap -
+
+Computing Irreducible Inconsistent Subsystem (IIS)...
+
+      Constraints           Bounds       Runtime
+     Min       Max       Min      Max
+------------------------------------------------
+        0    10390         0    30000         0s
+
+IIS computed: 1 constraints, 0 bounds
+IIS runtime: 0.01 seconds
+Optimize a model with 10389 rows, 20000 columns and 40100 nonzeros
+Coefficient statistics:
+  Matrix range    [1e+00, 1e+02]
+  Objective range [4e-01, 4e+02]
+  Bounds range    [1e+00, 1e+00]
+  RHS range       [1e+00, 1e+00]
+Presolve removed 0 rows and 10000 columns
+Presolve time: 0.00s
+
+Explored 0 nodes (0 simplex iterations) in 0.02 seconds
+Thread count was 1 (of 4 available processors)
+
+Model is infeasible
+Best objective -, best bound -, gap -
+
+Computing Irreducible Inconsistent Subsystem (IIS)...
+
+      Constraints           Bounds       Runtime
+     Min       Max       Min      Max
+------------------------------------------------
+        0    10389         0    30000         0s
+
+IIS computed: 1 constraints, 0 bounds
+IIS runtime: 0.01 seconds
+Optimize a model with 10388 rows, 20000 columns and 40100 nonzeros
+Coefficient statistics:
+  Matrix range    [1e+00, 1e+02]
+  Objective range [4e-01, 4e+02]
+  Bounds range    [1e+00, 1e+00]
+  RHS range       [1e+00, 1e+00]
+Presolve removed 0 rows and 10000 columns
+Presolve time: 0.00s
+
+Explored 0 nodes (0 simplex iterations) in 0.02 seconds
+Thread count was 1 (of 4 available processors)
+
+Model is infeasible
+Best objective -, best bound -, gap -
+
+Computing Irreducible Inconsistent Subsystem (IIS)...
+
+      Constraints           Bounds       Runtime
+     Min       Max       Min      Max
+------------------------------------------------
+        0    10388         0    30000         0s
+
+IIS computed: 1 constraints, 0 bounds
+IIS runtime: 0.01 seconds
+Optimize a model with 10400 rows, 20000 columns and 40100 nonzeros
+Coefficient statistics:
+  Matrix range    [1e+00, 1e+02]
+  Objective range [4e-01, 4e+02]
+  Bounds range    [1e+00, 1e+00]
+  RHS range       [1e+00, 1e+00]
+Presolve removed 0 rows and 10000 columns
+Presolve time: 0.01s
+
+Explored 0 nodes (0 simplex iterations) in 0.02 seconds
+Thread count was 1 (of 4 available processors)
+
+Model is infeasible
+Best objective -, best bound -, gap -
+
+Computing Irreducible Inconsistent Subsystem (IIS)...
+
+      Constraints           Bounds       Runtime
+     Min       Max       Min      Max
+------------------------------------------------
+        0    10400         0    30000         0s
+
+IIS computed: 1 constraints, 0 bounds
+IIS runtime: 0.01 seconds
+Optimize a model with 10400 rows, 20000 columns and 40100 nonzeros
+Coefficient statistics:
+  Matrix range    [1e+00, 1e+02]
+  Objective range [4e-01, 4e+02]
+  Bounds range    [1e+00, 1e+00]
+  RHS range       [1e+00, 1e+00]
+Presolve removed 0 rows and 10000 columns
+Presolve time: 0.00s
+
+Explored 0 nodes (0 simplex iterations) in 0.02 seconds
+Thread count was 1 (of 4 available processors)
+
+Model is infeasible
+Best objective -, best bound -, gap -
+
+IIS computed: 1 constraints, 0 bounds
+IIS runtime: 0.00 seconds
+Optimize a model with 10400 rows, 20000 columns and 40100 nonzeros
+Coefficient statistics:
+  Matrix range    [1e+00, 1e+02]
+  Objective range [4e-01, 4e+02]
+  Bounds range    [1e+00, 1e+00]
+  RHS range       [1e+00, 1e+00]
+Presolve removed 0 rows and 10000 columns
+Presolve time: 0.01s
+
+Explored 0 nodes (0 simplex iterations) in 0.02 seconds
+Thread count was 1 (of 4 available processors)
+
+Model is infeasible
+Best objective -, best bound -, gap -
+
+Computing Irreducible Inconsistent Subsystem (IIS)...
+
+      Constraints           Bounds       Runtime
+     Min       Max       Min      Max
+------------------------------------------------
+        0    10400         0    30000         0s
+
+IIS computed: 1 constraints, 0 bounds
+IIS runtime: 0.02 seconds
+Optimize a model with 10399 rows, 20000 columns and 40100 nonzeros
+Coefficient statistics:
+  Matrix range    [1e+00, 1e+02]
+  Objective range [4e-01, 4e+02]
+  Bounds range    [1e+00, 1e+00]
+  RHS range       [1e+00, 1e+00]
+Presolve removed 0 rows and 10000 columns
+Presolve time: 0.00s
+
+Explored 0 nodes (0 simplex iterations) in 0.02 seconds
+Thread count was 1 (of 4 available processors)
+
+Model is infeasible
+Best objective -, best bound -, gap -
+
+Computing Irreducible Inconsistent Subsystem (IIS)...
+
+      Constraints           Bounds       Runtime
+     Min       Max       Min      Max
+------------------------------------------------
+        0    10399         0    30000         0s
+
+IIS computed: 1 constraints, 0 bounds
+IIS runtime: 0.01 seconds
+Optimize a model with 10398 rows, 20000 columns and 40100 nonzeros
+Coefficient statistics:
+  Matrix range    [1e+00, 1e+02]
+  Objective range [4e-01, 4e+02]
+  Bounds range    [1e+00, 1e+00]
+  RHS range       [1e+00, 1e+00]
+Presolve removed 0 rows and 10000 columns
+Presolve time: 0.00s
+
+Explored 0 nodes (0 simplex iterations) in 0.02 seconds
+Thread count was 1 (of 4 available processors)
+
+Model is infeasible
+Best objective -, best bound -, gap -
+
+Computing Irreducible Inconsistent Subsystem (IIS)...
+
+      Constraints           Bounds       Runtime
+     Min       Max       Min      Max
+------------------------------------------------
+        0    10398         0    30000         0s
+
+IIS computed: 1 constraints, 0 bounds
+IIS runtime: 0.02 seconds
+Optimize a model with 10397 rows, 20000 columns and 40100 nonzeros
+Coefficient statistics:
+  Matrix range    [1e+00, 1e+02]
+  Objective range [4e-01, 4e+02]
+  Bounds range    [1e+00, 1e+00]
+  RHS range       [1e+00, 1e+00]
+Presolve removed 0 rows and 10000 columns
+Presolve time: 0.00s
+
+Explored 0 nodes (0 simplex iterations) in 0.02 seconds
+Thread count was 1 (of 4 available processors)
+
+Model is infeasible
+Best objective -, best bound -, gap -
+
+Computing Irreducible Inconsistent Subsystem (IIS)...
+
+      Constraints           Bounds       Runtime
+     Min       Max       Min      Max
+------------------------------------------------
+        0    10397         0    30000         0s
+
+IIS computed: 1 constraints, 0 bounds
+IIS runtime: 0.01 seconds
+Optimize a model with 10396 rows, 20000 columns and 40100 nonzeros
+Coefficient statistics:
+  Matrix range    [1e+00, 1e+02]
+  Objective range [4e-01, 4e+02]
+  Bounds range    [1e+00, 1e+00]
+  RHS range       [1e+00, 1e+00]
+Presolve removed 0 rows and 10000 columns
+Presolve time: 0.00s
+
+Explored 0 nodes (0 simplex iterations) in 0.02 seconds
+Thread count was 1 (of 4 available processors)
+
+Model is infeasible
+Best objective -, best bound -, gap -
+
+Computing Irreducible Inconsistent Subsystem (IIS)...
+
+      Constraints           Bounds       Runtime
+     Min       Max       Min      Max
+------------------------------------------------
+        0    10396         0    30000         0s
+
+IIS computed: 1 constraints, 0 bounds
+IIS runtime: 0.01 seconds
+Optimize a model with 10395 rows, 20000 columns and 40100 nonzeros
+Coefficient statistics:
+  Matrix range    [1e+00, 1e+02]
+  Objective range [4e-01, 4e+02]
+  Bounds range    [1e+00, 1e+00]
+  RHS range       [1e+00, 1e+00]
+Presolve removed 0 rows and 10000 columns
+Presolve time: 0.00s
+
+Explored 0 nodes (0 simplex iterations) in 0.02 seconds
+Thread count was 1 (of 4 available processors)
+
+Model is infeasible
+Best objective -, best bound -, gap -
+
+Computing Irreducible Inconsistent Subsystem (IIS)...
+
+      Constraints           Bounds       Runtime
+     Min       Max       Min      Max
+------------------------------------------------
+        0    10395         0    30000         0s
+
+IIS computed: 1 constraints, 0 bounds
+IIS runtime: 0.01 seconds
+Optimize a model with 10394 rows, 20000 columns and 40100 nonzeros
+Coefficient statistics:
+  Matrix range    [1e+00, 1e+02]
+  Objective range [4e-01, 4e+02]
+  Bounds range    [1e+00, 1e+00]
+  RHS range       [1e+00, 1e+00]
+Presolve removed 0 rows and 10000 columns
+Presolve time: 0.00s
+
+Explored 0 nodes (0 simplex iterations) in 0.02 seconds
+Thread count was 1 (of 4 available processors)
+
+Model is infeasible
+Best objective -, best bound -, gap -
+
+Computing Irreducible Inconsistent Subsystem (IIS)...
+
+      Constraints           Bounds       Runtime
+     Min       Max       Min      Max
+------------------------------------------------
+        0    10394         0    30000         0s
+
+IIS computed: 1 constraints, 0 bounds
+IIS runtime: 0.02 seconds
+Optimize a model with 10393 rows, 20000 columns and 40100 nonzeros
+Coefficient statistics:
+  Matrix range    [1e+00, 1e+02]
+  Objective range [4e-01, 4e+02]
+  Bounds range    [1e+00, 1e+00]
+  RHS range       [1e+00, 1e+00]
+Presolve removed 0 rows and 10000 columns
+Presolve time: 0.00s
+
+Explored 0 nodes (0 simplex iterations) in 0.02 seconds
+Thread count was 1 (of 4 available processors)
+
+Model is infeasible
+Best objective -, best bound -, gap -
+
+Computing Irreducible Inconsistent Subsystem (IIS)...
+
+      Constraints           Bounds       Runtime
+     Min       Max       Min      Max
+------------------------------------------------
+        0    10393         0    30000         0s
+
+IIS computed: 1 constraints, 0 bounds
+IIS runtime: 0.01 seconds
+Optimize a model with 10392 rows, 20000 columns and 40100 nonzeros
+Coefficient statistics:
+  Matrix range    [1e+00, 1e+02]
+  Objective range [4e-01, 4e+02]
+  Bounds range    [1e+00, 1e+00]
+  RHS range       [1e+00, 1e+00]
+Presolve removed 0 rows and 10000 columns
+Presolve time: 0.00s
+
+Explored 0 nodes (0 simplex iterations) in 0.02 seconds
+Thread count was 1 (of 4 available processors)
+
+Model is infeasible
+Best objective -, best bound -, gap -
+
+Computing Irreducible Inconsistent Subsystem (IIS)...
+
+      Constraints           Bounds       Runtime
+     Min       Max       Min      Max
+------------------------------------------------
+        0    10392         0    30000         0s
+
+IIS computed: 1 constraints, 0 bounds
+IIS runtime: 0.01 seconds
+Optimize a model with 10391 rows, 20000 columns and 40100 nonzeros
+Coefficient statistics:
+  Matrix range    [1e+00, 1e+02]
+  Objective range [4e-01, 4e+02]
+  Bounds range    [1e+00, 1e+00]
+  RHS range       [1e+00, 1e+00]
+Presolve removed 0 rows and 10000 columns
+Presolve time: 0.00s
+
+Explored 0 nodes (0 simplex iterations) in 0.02 seconds
+Thread count was 1 (of 4 available processors)
+
+Model is infeasible
+Best objective -, best bound -, gap -
+
+Computing Irreducible Inconsistent Subsystem (IIS)...
+
+      Constraints           Bounds       Runtime
+     Min       Max       Min      Max
+------------------------------------------------
+        0    10391         0    30000         0s
+
+IIS computed: 1 constraints, 0 bounds
+IIS runtime: 0.03 seconds
+Optimize a model with 10390 rows, 20000 columns and 40100 nonzeros
+Coefficient statistics:
+  Matrix range    [1e+00, 1e+02]
+  Objective range [4e-01, 4e+02]
+  Bounds range    [1e+00, 1e+00]
+  RHS range       [1e+00, 1e+00]
+Presolve removed 0 rows and 10000 columns
+Presolve time: 0.00s
+
+Explored 0 nodes (0 simplex iterations) in 0.02 seconds
+Thread count was 1 (of 4 available processors)
+
+Model is infeasible
+Best objective -, best bound -, gap -
+
+Computing Irreducible Inconsistent Subsystem (IIS)...
+
+      Constraints           Bounds       Runtime
+     Min       Max       Min      Max
+------------------------------------------------
+        0    10390         0    30000         0s
+
+IIS computed: 1 constraints, 0 bounds
+IIS runtime: 0.01 seconds
+Optimize a model with 10389 rows, 20000 columns and 40100 nonzeros
+Coefficient statistics:
+  Matrix range    [1e+00, 1e+02]
+  Objective range [4e-01, 4e+02]
+  Bounds range    [1e+00, 1e+00]
+  RHS range       [1e+00, 1e+00]
+Presolve removed 0 rows and 10000 columns
+Presolve time: 0.00s
+
+Explored 0 nodes (0 simplex iterations) in 0.02 seconds
+Thread count was 1 (of 4 available processors)
+
+Model is infeasible
+Best objective -, best bound -, gap -
+
+Computing Irreducible Inconsistent Subsystem (IIS)...
+
+      Constraints           Bounds       Runtime
+     Min       Max       Min      Max
+------------------------------------------------
+        0    10389         0    30000         0s
+
+IIS computed: 1 constraints, 0 bounds
+IIS runtime: 0.01 seconds
+Optimize a model with 10388 rows, 20000 columns and 40100 nonzeros
+Coefficient statistics:
+  Matrix range    [1e+00, 1e+02]
+  Objective range [4e-01, 4e+02]
+  Bounds range    [1e+00, 1e+00]
+  RHS range       [1e+00, 1e+00]
+Presolve removed 0 rows and 10000 columns
+Presolve time: 0.00s
+
+Explored 0 nodes (0 simplex iterations) in 0.02 seconds
+Thread count was 1 (of 4 available processors)
+
+Model is infeasible
+Best objective -, best bound -, gap -
+
+Computing Irreducible Inconsistent Subsystem (IIS)...
+
+      Constraints           Bounds       Runtime
+     Min       Max       Min      Max
+------------------------------------------------
+        0    10388         0    30000         0s
+
+IIS computed: 1 constraints, 0 bounds
+IIS runtime: 0.01 seconds
+Optimize a model with 10387 rows, 20000 columns and 40100 nonzeros
+Coefficient statistics:
+  Matrix range    [1e+00, 1e+02]
+  Objective range [4e-01, 4e+02]
+  Bounds range    [1e+00, 1e+00]
+  RHS range       [1e+00, 1e+00]
+Presolve removed 0 rows and 10000 columns
+Presolve time: 0.00s
+
+Explored 0 nodes (0 simplex iterations) in 0.02 seconds
+Thread count was 1 (of 4 available processors)
+
+Model is infeasible
+Best objective -, best bound -, gap -
+
+Computing Irreducible Inconsistent Subsystem (IIS)...
+
+      Constraints           Bounds       Runtime
+     Min       Max       Min      Max
+------------------------------------------------
+        0    10387         0    30000         0s
+
+IIS computed: 1 constraints, 0 bounds
+IIS runtime: 0.02 seconds
+Optimize a model with 10386 rows, 20000 columns and 40100 nonzeros
+Coefficient statistics:
+  Matrix range    [1e+00, 1e+02]
+  Objective range [4e-01, 4e+02]
+  Bounds range    [1e+00, 1e+00]
+  RHS range       [1e+00, 1e+00]
+Presolve removed 0 rows and 10000 columns
+Presolve time: 0.00s
+
+Explored 0 nodes (0 simplex iterations) in 0.02 seconds
+Thread count was 1 (of 4 available processors)
+
+Model is infeasible
+Best objective -, best bound -, gap -
+
+Computing Irreducible Inconsistent Subsystem (IIS)...
+
+      Constraints           Bounds       Runtime
+     Min       Max       Min      Max
+------------------------------------------------
+        0    10386         0    30000         0s
+
+IIS computed: 1 constraints, 0 bounds
+IIS runtime: 0.01 seconds
+Optimize a model with 10385 rows, 20000 columns and 40100 nonzeros
+Coefficient statistics:
+  Matrix range    [1e+00, 1e+02]
+  Objective range [4e-01, 4e+02]
+  Bounds range    [1e+00, 1e+00]
+  RHS range       [1e+00, 1e+00]
+Presolve removed 0 rows and 10000 columns
+Presolve time: 0.00s
+
+Explored 0 nodes (0 simplex iterations) in 0.02 seconds
+Thread count was 1 (of 4 available processors)
+
+Model is infeasible
+Best objective -, best bound -, gap -
+
+Computing Irreducible Inconsistent Subsystem (IIS)...
+
+      Constraints           Bounds       Runtime
+     Min       Max       Min      Max
+------------------------------------------------
+        0    10385         0    30000         0s
+
+IIS computed: 1 constraints, 0 bounds
+IIS runtime: 0.01 seconds
+Optimize a model with 10384 rows, 20000 columns and 40100 nonzeros
+Coefficient statistics:
+  Matrix range    [1e+00, 1e+02]
+  Objective range [4e-01, 4e+02]
+  Bounds range    [1e+00, 1e+00]
+  RHS range       [1e+00, 1e+00]
+Presolve removed 0 rows and 10000 columns
+Presolve time: 0.00s
+
+Explored 0 nodes (0 simplex iterations) in 0.02 seconds
+Thread count was 1 (of 4 available processors)
+
+Model is infeasible
+Best objective -, best bound -, gap -
+
+Computing Irreducible Inconsistent Subsystem (IIS)...
+
+      Constraints           Bounds       Runtime
+     Min       Max       Min      Max
+------------------------------------------------
+        0    10384         0    30000         0s
+
+IIS computed: 1 constraints, 0 bounds
+IIS runtime: 0.01 seconds
+Optimize a model with 10383 rows, 20000 columns and 40100 nonzeros
+Coefficient statistics:
+  Matrix range    [1e+00, 1e+02]
+  Objective range [4e-01, 4e+02]
+  Bounds range    [1e+00, 1e+00]
+  RHS range       [1e+00, 1e+00]
+Presolve removed 0 rows and 10000 columns
+Presolve time: 0.00s
+
+Explored 0 nodes (0 simplex iterations) in 0.02 seconds
+Thread count was 1 (of 4 available processors)
+
+Model is infeasible
+Best objective -, best bound -, gap -
+
+Computing Irreducible Inconsistent Subsystem (IIS)...
+
+      Constraints           Bounds       Runtime
+     Min       Max       Min      Max
+------------------------------------------------
+        0    10383         0    30000         0s
+
+IIS computed: 1 constraints, 0 bounds
+IIS runtime: 0.01 seconds
+Optimize a model with 10382 rows, 20000 columns and 40100 nonzeros
+Coefficient statistics:
+  Matrix range    [1e+00, 1e+02]
+  Objective range [4e-01, 4e+02]
+  Bounds range    [1e+00, 1e+00]
+  RHS range       [1e+00, 1e+00]
+Presolve removed 0 rows and 10000 columns
+Presolve time: 0.00s
+
+Explored 0 nodes (0 simplex iterations) in 0.02 seconds
+Thread count was 1 (of 4 available processors)
+
+Model is infeasible
+Best objective -, best bound -, gap -
+
+Computing Irreducible Inconsistent Subsystem (IIS)...
+
+      Constraints           Bounds       Runtime
+     Min       Max       Min      Max
+------------------------------------------------
+        0    10382         0    30000         0s
+
+IIS computed: 1 constraints, 0 bounds
+IIS runtime: 0.01 seconds
+Optimize a model with 10381 rows, 20000 columns and 40100 nonzeros
+Coefficient statistics:
+  Matrix range    [1e+00, 1e+02]
+  Objective range [4e-01, 4e+02]
+  Bounds range    [1e+00, 1e+00]
+  RHS range       [1e+00, 1e+00]
+Presolve removed 0 rows and 10000 columns
+Presolve time: 0.00s
+
+Explored 0 nodes (0 simplex iterations) in 0.02 seconds
+Thread count was 1 (of 4 available processors)
+
+Model is infeasible
+Best objective -, best bound -, gap -
+
+Computing Irreducible Inconsistent Subsystem (IIS)...
+
+      Constraints           Bounds       Runtime
+     Min       Max       Min      Max
+------------------------------------------------
+        0    10381         0    30000         0s
+
+IIS computed: 1 constraints, 0 bounds
+IIS runtime: 0.01 seconds
+Optimize a model with 10380 rows, 20000 columns and 40100 nonzeros
+Coefficient statistics:
+  Matrix range    [1e+00, 1e+02]
+  Objective range [4e-01, 4e+02]
+  Bounds range    [1e+00, 1e+00]
+  RHS range       [1e+00, 1e+00]
+Presolve removed 0 rows and 10000 columns
+Presolve time: 0.00s
+
+Explored 0 nodes (0 simplex iterations) in 0.02 seconds
+Thread count was 1 (of 4 available processors)
+
+Model is infeasible
+Best objective -, best bound -, gap -
+
+Computing Irreducible Inconsistent Subsystem (IIS)...
+
+      Constraints           Bounds       Runtime
+     Min       Max       Min      Max
+------------------------------------------------
+        0    10380         0    30000         0s
+
+IIS computed: 1 constraints, 0 bounds
+IIS runtime: 0.01 seconds
+Optimize a model with 10379 rows, 20000 columns and 40100 nonzeros
+Coefficient statistics:
+  Matrix range    [1e+00, 1e+02]
+  Objective range [4e-01, 4e+02]
+  Bounds range    [1e+00, 1e+00]
+  RHS range       [1e+00, 1e+00]
+Presolve removed 0 rows and 10000 columns
+Presolve time: 0.00s
+
+Explored 0 nodes (0 simplex iterations) in 0.02 seconds
+Thread count was 1 (of 4 available processors)
+
+Model is infeasible
+Best objective -, best bound -, gap -
+
+Computing Irreducible Inconsistent Subsystem (IIS)...
+
+      Constraints           Bounds       Runtime
+     Min       Max       Min      Max
+------------------------------------------------
+        0    10379         0    30000         0s
+
+IIS computed: 1 constraints, 0 bounds
+IIS runtime: 0.01 seconds
+Optimize a model with 10399 rows, 20000 columns and 40100 nonzeros
+Coefficient statistics:
+  Matrix range    [1e+00, 1e+02]
+  Objective range [4e-01, 4e+02]
+  Bounds range    [1e+00, 1e+00]
+  RHS range       [1e+00, 1e+00]
+Presolve removed 0 rows and 10000 columns
+Presolve time: 0.01s
+
+Explored 0 nodes (0 simplex iterations) in 0.02 seconds
+Thread count was 1 (of 4 available processors)
+
+Model is infeasible
+Best objective -, best bound -, gap -
+
+Computing Irreducible Inconsistent Subsystem (IIS)...
+
+      Constraints           Bounds       Runtime
+     Min       Max       Min      Max
+------------------------------------------------
+        0    10399         0    30000         0s
+
+IIS computed: 1 constraints, 0 bounds
+IIS runtime: 0.01 seconds
+Optimize a model with 10398 rows, 20000 columns and 40100 nonzeros
+Coefficient statistics:
+  Matrix range    [1e+00, 1e+02]
+  Objective range [4e-01, 4e+02]
+  Bounds range    [1e+00, 1e+00]
+  RHS range       [1e+00, 1e+00]
+Presolve removed 0 rows and 10000 columns
+Presolve time: 0.00s
+
+Explored 0 nodes (0 simplex iterations) in 0.02 seconds
+Thread count was 1 (of 4 available processors)
+
+Model is infeasible
+Best objective -, best bound -, gap -
+
+Computing Irreducible Inconsistent Subsystem (IIS)...
+
+      Constraints           Bounds       Runtime
+     Min       Max       Min      Max
+------------------------------------------------
+        0    10398         0    30000         0s
+
+IIS computed: 1 constraints, 0 bounds
+IIS runtime: 0.01 seconds
+Optimize a model with 10397 rows, 20000 columns and 40100 nonzeros
+Coefficient statistics:
+  Matrix range    [1e+00, 1e+02]
+  Objective range [4e-01, 4e+02]
+  Bounds range    [1e+00, 1e+00]
+  RHS range       [1e+00, 1e+00]
+Presolve removed 0 rows and 10000 columns
+Presolve time: 0.00s
+
+Explored 0 nodes (0 simplex iterations) in 0.02 seconds
+Thread count was 1 (of 4 available processors)
+
+Model is infeasible
+Best objective -, best bound -, gap -
+
+Computing Irreducible Inconsistent Subsystem (IIS)...
+
+      Constraints           Bounds       Runtime
+     Min       Max       Min      Max
+------------------------------------------------
+        0    10397         0    30000         0s
+
+IIS computed: 1 constraints, 0 bounds
+IIS runtime: 0.01 seconds
+Optimize a model with 10396 rows, 20000 columns and 40100 nonzeros
+Coefficient statistics:
+  Matrix range    [1e+00, 1e+02]
+  Objective range [4e-01, 4e+02]
+  Bounds range    [1e+00, 1e+00]
+  RHS range       [1e+00, 1e+00]
+Presolve removed 0 rows and 10000 columns
+Presolve time: 0.00s
+
+Explored 0 nodes (0 simplex iterations) in 0.02 seconds
+Thread count was 1 (of 4 available processors)
+
+Model is infeasible
+Best objective -, best bound -, gap -
+
+Computing Irreducible Inconsistent Subsystem (IIS)...
+
+      Constraints           Bounds       Runtime
+     Min       Max       Min      Max
+------------------------------------------------
+        0    10396         0    30000         0s
+
+IIS computed: 1 constraints, 0 bounds
+IIS runtime: 0.01 seconds
+Optimize a model with 10399 rows, 20000 columns and 40100 nonzeros
+Coefficient statistics:
+  Matrix range    [1e+00, 1e+02]
+  Objective range [4e-01, 4e+02]
+  Bounds range    [1e+00, 1e+00]
+  RHS range       [1e+00, 1e+00]
+Presolve removed 0 rows and 10000 columns
+Presolve time: 0.00s
+
+Explored 0 nodes (0 simplex iterations) in 0.02 seconds
+Thread count was 1 (of 4 available processors)
+
+Model is infeasible
+Best objective -, best bound -, gap -
+
+Computing Irreducible Inconsistent Subsystem (IIS)...
+
+      Constraints           Bounds       Runtime
+     Min       Max       Min      Max
+------------------------------------------------
+        0    10399         0    30000         0s
+
+IIS computed: 1 constraints, 0 bounds
+IIS runtime: 0.01 seconds
+Optimize a model with 10200 rows, 20000 columns and 39702 nonzeros
+Coefficient statistics:
+  Matrix range    [1e+00, 1e+02]
+  Objective range [4e-01, 4e+02]
+  Bounds range    [1e+00, 1e+00]
+  RHS range       [1e+00, 1e+00]
+Presolve removed 0 rows and 10000 columns
+Presolve time: 0.00s
+
+Explored 0 nodes (0 simplex iterations) in 0.02 seconds
+Thread count was 1 (of 4 available processors)
+
+Model is infeasible
+Best objective -, best bound -, gap -
+
+Computing Irreducible Inconsistent Subsystem (IIS)...
+
+      Constraints           Bounds       Runtime
+     Min       Max       Min      Max
+------------------------------------------------
+        0    10200         0    30000         0s
+
+IIS computed: 1 constraints, 0 bounds
+IIS runtime: 0.01 seconds
+
+Gurobi 6.5.0 (mac64) logging started Wed Jan  6 00:21:02 2016
+
+Changed value of parameter LazyConstraints to 1
+   Prev: 0  Min: 0  Max: 1  Default: 0
+Optimize a model with 10 rows, 55 columns and 100 nonzeros
+Coefficient statistics:
+  Matrix range    [1e+00, 1e+00]
+  Objective range [1e+01, 1e+02]
+  Bounds range    [1e+00, 1e+00]
+  RHS range       [2e+00, 2e+00]
+Presolve removed 0 rows and 10 columns
+Presolve time: 0.00s
+Presolved: 10 rows, 45 columns, 90 nonzeros
+Variable types: 0 continuous, 45 integer (45 binary)
+
+Root relaxation: objective 3.360275e+02, 18 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+*    0     0               0     348.1976399  348.19764  0.00%     -    0s
+
+Cutting planes:
+  Lazy constraints: 4
+
+Explored 0 nodes (21 simplex iterations) in 0.01 seconds
+Thread count was 4 (of 4 available processors)
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 3.481976398931e+02, best bound 3.481976398931e+02, gap 0.0%
+
+Gurobi 6.5.0 (mac64) logging started Wed Jan  6 00:21:06 2016
+
+Changed value of parameter LazyConstraints to 1
+   Prev: 0  Min: 0  Max: 1  Default: 0
+Optimize a model with 100 rows, 5050 columns and 10000 nonzeros
+Coefficient statistics:
+  Matrix range    [1e+00, 1e+00]
+  Objective range [1e+00, 1e+02]
+  Bounds range    [1e+00, 1e+00]
+  RHS range       [2e+00, 2e+00]
+Presolve removed 0 rows and 100 columns
+Presolve time: 0.01s
+Presolved: 100 rows, 4950 columns, 9900 nonzeros
+Variable types: 0 continuous, 4950 integer (4950 binary)
+
+Root relaxation: objective 7.400596e+02, 147 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0  740.05958    0   20          -  740.05958      -     -    0s
+     0     0  744.98424    0   18          -  744.98424      -     -    0s
+     0     0  746.19848    0   13          -  746.19848      -     -    0s
+     0     0  746.38460    0    6          -  746.38460      -     -    0s
+     0     2  786.91050    0    6          -  786.91050      -     -    0s
+*  495   435             163     911.2648037  787.85771  13.5%   4.2    0s
+*  683   190              32     812.4384965  788.85293  2.90%   4.6    1s
+H  759   219                     810.7803127  793.19202  2.17%   4.6    1s
+
+Cutting planes:
+  Gomory: 5
+  Clique: 1
+  Zero half: 6
+  Lazy constraints: 1
+
+Explored 787 nodes (4506 simplex iterations) in 1.57 seconds
+Thread count was 4 (of 4 available processors)
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 8.107803127137e+02, best bound 8.107803127137e+02, gap 0.0%
+
+Gurobi 6.5.0 (mac64) logging started Wed Jan  6 00:21:10 2016
+
+Changed value of parameter LazyConstraints to 1
+   Prev: 0  Min: 0  Max: 1  Default: 0
+Optimize a model with 200 rows, 20100 columns and 40000 nonzeros
+Coefficient statistics:
+  Matrix range    [1e+00, 1e+00]
+  Objective range [1e+00, 1e+02]
+  Bounds range    [1e+00, 1e+00]
+  RHS range       [2e+00, 2e+00]
+Presolve removed 0 rows and 200 columns
+Presolve time: 0.05s
+Presolved: 200 rows, 19900 columns, 39800 nonzeros
+Variable types: 0 continuous, 19900 integer (19900 binary)
+
+Root relaxation: objective 9.819618e+02, 303 iterations, 0.01 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0  981.96181    0   58          -  981.96181      -     -    0s
+     0     0  992.86349    0   34          -  992.86349      -     -    0s
+     0     0  994.27136    0   35          -  994.27136      -     -    0s
+     0     0  994.51056    0   31          -  994.51056      -     -    0s
+     0     0  994.51730    0   36          -  994.51730      -     -    0s
+     0     0  994.56357    0   30          -  994.56357      -     -    0s
+     0     0  994.56357    0   30          -  994.56357      -     -    0s
+     0     2 1004.99718    0   52          - 1004.99718      -     -    1s
+   945   922 1171.13243  363    6          - 1010.26571      -   4.1    5s
+  1246  1164 1056.85245   50    6          - 1043.16581      -   4.8   10s
+  2678  2050 1401.32454  405    6          - 1043.16581      -   5.4   15s
+  4329  3116 1065.20857   58   12          - 1043.53085      -   5.8   20s
+* 5484  4134             969    2062.5292686 1043.53085  49.4%   5.9   23s
+H 5582    36                    1044.8521839 1043.53085  0.13%   5.9   24s
+
+Cutting planes:
+  Gomory: 15
+  MIR: 1
+  Flow cover: 4
+  Zero half: 16
+  Lazy constraints: 58
+
+Explored 5702 nodes (34026 simplex iterations) in 24.38 seconds
+Thread count was 4 (of 4 available processors)
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 1.044852183910e+03, best bound 1.044852183910e+03, gap 0.0%
+
+Gurobi 6.5.0 (mac64) logging started Wed Jan  6 00:21:45 2016
+
+Changed value of parameter LazyConstraints to 1
+   Prev: 0  Min: 0  Max: 1  Default: 0
+Optimize a model with 300 rows, 45150 columns and 90000 nonzeros
+Coefficient statistics:
+  Matrix range    [1e+00, 1e+00]
+  Objective range [1e+00, 1e+02]
+  Bounds range    [1e+00, 1e+00]
+  RHS range       [2e+00, 2e+00]
+Presolve removed 0 rows and 300 columns
+Presolve time: 0.14s
+Presolved: 300 rows, 44850 columns, 89700 nonzeros
+Variable types: 0 continuous, 44850 integer (44850 binary)
+
+Root relaxation: objective 1.242992e+03, 460 iterations, 0.02 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 1242.99155    0   44          - 1242.99155      -     -    0s
+     0     0 1249.23317    0   30          - 1249.23317      -     -    0s
+     0     0 1250.71684    0   50          - 1250.71684      -     -    1s
+     0     0 1251.65631    0   58          - 1251.65631      -     -    1s
+     0     0 1252.22529    0   56          - 1252.22529      -     -    1s
+     0     0 1252.59979    0   36          - 1252.59979      -     -    1s
+     0     0 1252.59979    0   36          - 1252.59979      -     -    1s
+     0     2 1259.58809    0   36          - 1259.58809      -     -    4s
+    59    60 1264.03846   25    6          - 1260.07954      -   2.6    5s
+   584   578 1316.93815  228    8          - 1260.07954      -   3.0   10s
+  1202  1193 1387.14319  476    6          - 1260.07954      -   3.0   15s
+  1898  1877 1494.63788  762    6          - 1260.07954      -   3.2   20s
+  2437  2394 1275.71819   10   46          - 1275.71819      -   3.4   25s
+  2462  2412 1288.44433   29   34          - 1288.44433      -   3.9   30s
+  2906  2695 1310.50280  142    6          - 1289.01681      -   4.0   35s
+  3605  3151 1366.48754  304    6          - 1289.53586      -   4.3   40s
+  4292  3582 1410.86252  475    6          - 1289.53586      -   4.6   45s
+  5196  4114 1485.27126  623    6          - 1289.53586      -   4.6   50s
+  5935  4599 1552.80231  743    6          - 1289.53586      -   4.7   58s
+  6015  4643 1340.93697  212    6          - 1289.53586      -   4.7   60s
+  6776  5108 1674.65221  912    -          - 1289.53586      -   4.8   66s
+  7578  5601 1785.04577 1061    6          - 1289.53586      -   4.9   70s
+  8448  6155 2050.59812 1248   12          - 1289.53586      -   5.0   75s
+  9300  6677 2301.44992 1462   12          - 1289.53586      -   5.1   80s
+  9902  7077 2550.54113 1631    -          - 1289.53586      -   5.2   85s
+ 10793  7859 1446.62862  564    -          - 1289.74570      -   5.3   90s
+ 12158  9144 1330.04657   92    -          - 1289.96909      -   5.5   96s
+ 13235 10185 1349.66208  172    6          - 1289.96909      -   5.6  101s
+ 14248 11163 1365.70407  209   10          - 1289.96909      -   5.7  105s
+ 15428 12362 1417.50142  416   10          - 1289.96909      -   5.8  110s
+ 16237 13075 1445.43265  543    6          - 1289.96909      -   5.9  115s
+ 16929 13741 1474.49554  674    6          - 1289.96909      -   6.1  121s
+ 17538 14334 infeasible  694               - 1290.28924      -   6.2  125s
+ 18226 14940 1335.84154   92   32          - 1290.28924      -   6.3  130s
+*19138  4736             127    1347.2642888 1290.28924  4.23%   6.5  134s
+ 19330  4727     cutoff  165      1347.26429 1290.29825  4.23%   6.5  136s
+ 19880  5185 1347.00130  101    - 1347.26429 1290.42549  4.22%   6.6  140s
+ 20365  5581 1341.08257  131   20 1347.26429 1290.52078  4.21%   6.5  145s
+ 21329  6410     cutoff  126      1347.26429 1290.71974  4.20%   6.5  150s
+*22022  3209              89    1330.5666631 1290.90396  2.98%   6.5  152s
+ 22895  3768 infeasible   90      1330.56666 1291.25645  2.95%   6.5  155s
+*24239  4699              89    1330.4622746 1292.38885  2.86%   6.6  160s
+ 25771  5776 1327.40944   82   50 1330.46227 1293.78607  2.76%   6.7  165s
+ 27126  6720 1329.83917   67    8 1330.46227 1295.13736  2.66%   6.7  170s
+ 28422  7478 1325.88735   85   22 1330.46227 1296.34129  2.56%   6.9  175s
+ 29627  8147 1329.06149   88   69 1330.46227 1297.80679  2.45%   7.0  180s
+*30409  8458              89    1330.3512249 1299.32512  2.33%   7.2  181s
+ 31344  8957 1327.32502   82   17 1330.35122 1300.58985  2.24%   7.3  185s
+*32008  9199              98    1330.1469441 1301.59707  2.15%   7.4  187s
+*32680  6682             101    1327.4593223 1302.08275  1.91%   7.5  189s
+ 32807  6709     cutoff  107      1327.45932 1302.27268  1.90%   7.5  190s
+*32976  6575              95    1327.2956514 1302.83213  1.84%   7.6  190s
+*33284  6355              87    1327.0218645 1303.90763  1.74%   7.6  191s
+ 33997  6452 1323.57289   68   14 1327.02186 1313.34574  1.03%   7.9  195s
+ 35244  7333     cutoff   86      1327.02186 1314.23293  0.96%   7.8  200s
+ 36803  8400 1326.98342   65   26 1327.02186 1314.81889  0.92%   7.7  205s
+*37058  6988              77    1325.8063229 1314.81889  0.83%   7.7  205s
+ 38819  8378     cutoff   47      1325.80632 1315.09992  0.81%   7.6  210s
+*39471  7409              79    1324.7972393 1315.15395  0.73%   7.6  212s
+ 40721  8346 1324.68207   74   14 1324.79724 1315.32092  0.72%   7.5  215s
+ 42453  9475 1322.66655   53   42 1324.79724 1315.54472  0.70%   7.4  221s
+ 44022 10429     cutoff  144      1324.79724 1315.72603  0.68%   7.4  225s
+H45164  9551                    1323.7998993 1315.86321  0.60%   7.4  228s
+ 45856  9868 1320.61072   59   18 1323.79990 1315.93268  0.59%   7.3  230s
+ 47294 10671 1319.83574   58   76 1323.79990 1316.11370  0.58%   7.3  235s
+ 49685 11887 1317.14685   42   50 1323.79990 1316.35073  0.56%   7.3  240s
+ 51710 12874 infeasible   59      1323.79990 1316.55169  0.55%   7.3  245s
+ 53646 13849     cutoff   44      1323.79990 1316.72006  0.53%   7.3  250s
+ 55564 14668 1322.35303   43   34 1323.79990 1316.88700  0.52%   7.3  255s
+ 57812 15662 1323.04818   45   17 1323.79990 1317.03013  0.51%   7.2  260s
+ 59580 16406 1320.07094   41   20 1323.79990 1317.14840  0.50%   7.2  265s
+ 61669 17213 1321.59831   57   28 1323.79990 1317.27528  0.49%   7.2  270s
+ 63689 18125 1323.30794   49   32 1323.79990 1317.39120  0.48%   7.2  275s
+ 65766 18913 1323.59529   59   14 1323.79990 1317.50418  0.48%   7.2  280s
+ 67822 19771     cutoff   56      1323.79990 1317.58640  0.47%   7.2  285s
+ 70274 20808 1322.78642   46   64 1323.79990 1317.67247  0.46%   7.2  290s
+ 72251 21561 1322.57117   50   72 1323.79990 1317.74859  0.46%   7.2  295s
+ 74428 22381 1322.75714   48   48 1323.79990 1317.83618  0.45%   7.2  300s
+ 76280 23190     cutoff   46      1323.79990 1317.88871  0.45%   7.2  305s
+ 78482 24085 1323.05226   54   41 1323.79990 1317.95809  0.44%   7.2  310s
+ 80444 24936 1323.66469   54    6 1323.79990 1318.00795  0.44%   7.2  315s
+
+Cutting planes:
+  Gomory: 12
+  MIR: 2
+  Flow cover: 9
+  Zero half: 34
+  Lazy constraints: 220
+
+Explored 81440 nodes (586283 simplex iterations) in 316.65 seconds
+Thread count was 4 (of 4 available processors)
+
+Solve interrupted
+Best objective 1.323799899267e+03, best bound 1.318029240099e+03, gap 0.4359%
